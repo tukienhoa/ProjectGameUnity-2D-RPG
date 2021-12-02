@@ -21,15 +21,15 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
 
-        if (!playerExists)
-        {
-            playerExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        // if (!playerExists)
+        // {
+        //     playerExists = true;
+        //     DontDestroyOnLoad(transform.gameObject);
+        // }
+        // else
+        // {
+        //     Destroy(gameObject);
+        // }
     }
 
     // Update is called once per frame
