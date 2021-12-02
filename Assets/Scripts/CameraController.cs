@@ -6,7 +6,9 @@ public class CameraController : MonoBehaviour
 {
     public GameObject followTarget;
     private Vector3 targetPos;
-    public float moveSpeed;
+
+    // Set Z offset = -10
+    public Vector3 offset;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +20,6 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         targetPos = new Vector3(followTarget.transform.position.x, followTarget.transform.position.y, followTarget.transform.position.z);
-        transform.position = Vector3.Lerp(transform.position, targetPos, moveSpeed * Time.deltaTime);
+        transform.position = targetPos + offset;
     }
 }
