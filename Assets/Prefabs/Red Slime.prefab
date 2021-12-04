@@ -187,3 +187,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 15
   CurrentHealth: 0
+  expToGive: 25
