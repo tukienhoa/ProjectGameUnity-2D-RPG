@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private bool playerMoving;
     public Vector2 lastMove;
 
-    private bool playerExists;
+    private static bool playerExists;
 
     private bool attacking;
     public float attackTime;
