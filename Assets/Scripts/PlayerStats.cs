@@ -9,10 +9,24 @@ public class PlayerStats : MonoBehaviour
 
     public int[] toLevelUp;
 
+    public int[] HPLevels;
+    public int[] attackLevels;
+    public int[] defenceLevels;
+
+    public int currentHP;
+    public int currentAttack;
+    public int currentDefence;
+
+    private PlayerHealthManager thePlayerHealth;
+
     // Start is called before the first frame update
     void Start()
     {
+        currentHP = HPLevels[1];
+        currentAttack = attackLevels[1];
+        currentDefence = defenceLevels[1];
 
+        thePlayerHealth = FindObjectOfType<PlayerHealthManager>();
     }
 
     // Update is called once per frame
@@ -20,13 +34,24 @@ public class PlayerStats : MonoBehaviour
     {
         if (currentExp >= toLevelUp[currentLevel])
         {
-            currentLevel++;
-
+            LevelUp();
         }
     }
 
     public void AddExperience(int experienceToAdd)
     {
         currentExp += experienceToAdd;
+    }
+
+    public void LevelUp()
+    {
+        currentLevel++;
+        currentHP = HPLevels[currentLevel];
+
+        thePlayerHealth.playerMaxHealth = currentHP;
+        thePlayerHealth.playerCurrentHealth = currentHP;
+
+        currentAttack = attackLevels[currentLevel];
+        currentDefence = defenceLevels[currentLevel];
     }
 }
