@@ -5415,37 +5415,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2079770628, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
-      propertyPath: flashLength
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2079770628, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
-      propertyPath: playerMaxHealth
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3660525215539453027, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
-      propertyPath: m_Size.x
-      value: 0.59841
-      objectReference: {fileID: 0}
-    - target: {fileID: 3660525215539453027, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
-      propertyPath: m_Size.y
-      value: 0.9881885
-      objectReference: {fileID: 0}
-    - target: {fileID: 3660525215539453027, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.01181145
-      objectReference: {fileID: 0}
-    - target: {fileID: 3660525215539453027, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.0059057474
-      objectReference: {fileID: 0}
     - target: {fileID: 3660525215539453032, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3660525215539453037, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
-      propertyPath: attackTime
-      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3660525215539453038, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
       propertyPath: m_RootOrder
