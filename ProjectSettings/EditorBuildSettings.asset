@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DungeonScreen.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/VillageScreen.unity
+    guid: 6853b72f074724d49a1933bb355b15c5
+  - enabled: 1
+    path: Assets/Scenes/WeaponShopScene.unity
+    guid: 31f21e86791a3774eb4d54c1a264bd65
   m_configObjects: {}

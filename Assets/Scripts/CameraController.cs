@@ -10,10 +10,20 @@ public class CameraController : MonoBehaviour
     // Set Z offset = -10
     public Vector3 offset;
 
+    private static bool cameraExists;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        if (!cameraExists)
+        {
+            cameraExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
