@@ -23,11 +23,16 @@ public class PlayerController : MonoBehaviour
 
     private bool isDashing;
 
+    private PlayerStats thePS;
+
+    private Vector2 lastVelocity;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
+        thePS = FindObjectOfType<PlayerStats>();
 
         if (!playerExists)
         {
@@ -54,6 +59,7 @@ public class PlayerController : MonoBehaviour
                 myRigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * currentMoveSpeed, myRigidBody.velocity.y);
                 playerMoving = true;
                 lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
+                lastVelocity = myRigidBody.velocity;
             }
 
             // Move up / down
@@ -63,6 +69,7 @@ public class PlayerController : MonoBehaviour
                 myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, Input.GetAxisRaw("Vertical") * currentMoveSpeed);
                 playerMoving = true;
                 lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical"));
+                lastVelocity = myRigidBody.velocity;
             }
 
             if (Input.GetAxisRaw("Horizontal") < 0.5f && Input.GetAxisRaw("Horizontal") > -0.5f)
@@ -71,6 +78,8 @@ public class PlayerController : MonoBehaviour
             if (Input.GetAxisRaw("Vertical") < 0.5f && Input.GetAxisRaw("Vertical") > -0.5f)
                 myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, 0f);
 
+
+            // Attack
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 attackTimeCounter = attackTime;
@@ -89,11 +98,31 @@ public class PlayerController : MonoBehaviour
                 currentMoveSpeed = moveSpeed;
             }
 
+            // Dash
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 isDashing = true;
                 StartCoroutine("Dash");
 
+            }
+
+            // Open Chest
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                RaycastHit2D hit = Physics2D.Raycast(myRigidBody.position + Vector2.up * 0.2f, lastVelocity.normalized, 1.5f, LayerMask.GetMask("Chest"));
+
+                if (hit.collider != null)
+                {
+                    ChestController chest = hit.collider.GetComponent<ChestController>();
+                    if (chest != null)
+                    {
+                        if (!chest.ChestOpened())
+                        {
+                            chest.Open();
+                            thePS.AddExperience(chest.expReward);
+                        }
+                    }
+                }
             }
         }
 

@@ -47,6 +47,7 @@ public class PlayerStats : MonoBehaviour
     {
         currentLevel++;
         currentHP = HPLevels[currentLevel];
+        currentExp -= toLevelUp[currentLevel - 1];
 
         thePlayerHealth.playerMaxHealth = currentHP;
         thePlayerHealth.playerCurrentHealth = currentHP;
