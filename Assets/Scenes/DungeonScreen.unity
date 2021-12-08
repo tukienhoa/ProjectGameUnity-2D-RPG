@@ -675,6 +675,77 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8354768894676025973, guid: 23f7108b8d0ded7469d9a39b15417b7f, type: 3}
   m_PrefabInstance: {fileID: 1924232923}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &767626651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 767626654}
+  - component: {fileID: 767626653}
+  - component: {fileID: 767626652}
+  m_Layer: 0
+  m_Name: Exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &767626652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767626651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 198111f6db42b064e9528e35e301d898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: VillageScreen
+--- !u!61 &767626653
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767626651}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.20283282}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.59433436}
+  m_EdgeRadius: 0
+--- !u!4 &767626654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767626651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.99, y: 3.36, z: -0.5282879}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &772046594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11401,6 +11472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3660525215539453032, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3660525215539453038, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11513,19 +11588,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7107085127856339816, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7107085127856339816, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7107085127894861240, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7107085127894861240, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7107085128583967443, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: playerHealth
@@ -11534,6 +11609,10 @@ PrefabInstance:
     - target: {fileID: 7107085128583967448, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085128583967448, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7107085128583967452, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_Pivot.x
@@ -11789,6 +11868,10 @@ PrefabInstance:
     - target: {fileID: 8908458274944003204, guid: 4ace6f52c6fdedb48967a323d5cfd889, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908458274944003204, guid: 4ace6f52c6fdedb48967a323d5cfd889, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8908458274944003206, guid: 4ace6f52c6fdedb48967a323d5cfd889, type: 3}
       propertyPath: followTarget

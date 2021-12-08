@@ -21,15 +21,15 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // if (!UIExists)
-        // {
-        //     UIExists = true;
-        //     DontDestroyOnLoad(transform.gameObject);
-        // }
-        // else
-        // {
-        //     Destroy(gameObject);
-        // }
+        if (!UIExists)
+        {
+            UIExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         playerHealth = FindObjectOfType<PlayerHealthManager>();
         thePS = GetComponent<PlayerStats>();
     }
