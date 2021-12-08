@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public float attackTime;
     private float attackTimeCounter;
 
+    private bool isDashing;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +45,7 @@ public class PlayerController : MonoBehaviour
     {
         playerMoving = false;
 
-        if (!attacking)
+        if (!attacking && !isDashing)
         {
             // Move right / left
             if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
@@ -86,6 +88,13 @@ public class PlayerController : MonoBehaviour
             {
                 currentMoveSpeed = moveSpeed;
             }
+
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                isDashing = true;
+                StartCoroutine("Dash");
+
+            }
         }
 
         if (attackTimeCounter > 0)
@@ -103,5 +112,15 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("PlayerMoving", playerMoving);
         anim.SetFloat("LastMoveX", lastMove.x);
         anim.SetFloat("LastMoveY", lastMove.y);
+    }
+
+    IEnumerator Dash()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            myRigidBody.AddForce(myRigidBody.velocity * 15);
+            yield return new WaitForSeconds(0.05f);
+        }
+        isDashing = false;
     }
 }

@@ -14,6 +14,10 @@ public class UIManager : MonoBehaviour
 
     private static bool UIExists;
 
+    // EXP bar
+    public Slider expBar;
+    public Text expText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,9 +37,17 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // HP bar
         healthBar.maxValue = playerHealth.playerMaxHealth;
         healthBar.value = playerHealth.playerCurrentHealth;
         HPText.text = playerHealth.playerCurrentHealth + " / " + playerHealth.playerMaxHealth;
+
+        // EXP bar
+        expBar.maxValue = thePS.toLevelUp[thePS.currentLevel];
+        expBar.value = thePS.currentExp;
+        expText.text = "EXP  " + expBar.value + " / " + expBar.maxValue;
+
+        // Level
         levelText.text = "Level: " + thePS.currentLevel;
     }
 }
