@@ -20711,6 +20711,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest
       objectReference: {fileID: 0}
+    - target: {fileID: 6043906740587172345, guid: af83cf1d4edae6a42a832fea7a6dc7c6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043906740587172348, guid: af83cf1d4edae6a42a832fea7a6dc7c6, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043906740587172348, guid: af83cf1d4edae6a42a832fea7a6dc7c6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043906740587172348, guid: af83cf1d4edae6a42a832fea7a6dc7c6, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1608906655
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043906740587172350, guid: af83cf1d4edae6a42a832fea7a6dc7c6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6043906740587172351, guid: af83cf1d4edae6a42a832fea7a6dc7c6, type: 3}
       propertyPath: m_RootOrder
       value: 6
