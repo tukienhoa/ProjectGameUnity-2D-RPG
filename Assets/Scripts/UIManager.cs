@@ -30,7 +30,7 @@ public class UIManager : MonoBehaviour
         // {
         //     Destroy(gameObject);
         // }
-
+        playerHealth = FindObjectOfType<PlayerHealthManager>();
         thePS = GetComponent<PlayerStats>();
     }
 
