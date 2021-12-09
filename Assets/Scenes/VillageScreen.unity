@@ -2707,10 +2707,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 740759671}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46c9defc7d4c58e428bec1be7de2dc94, type: 3}
+  m_Script: {fileID: 11500000, guid: b2ebeeb39dcb3714e964691efd7faf9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 2
   isWalking: 0
   walkTime: 2
   waitTime: 1

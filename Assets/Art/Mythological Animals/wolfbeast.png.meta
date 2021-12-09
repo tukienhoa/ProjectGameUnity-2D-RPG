@@ -1,0 +1,2244 @@
+fileFormatVersion: 2
+guid: 3613c49422eb63a498a5115e17b724a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3484905273268247087
+    second: wolfbeast_0
+  - first:
+      213: 8085750456054580203
+    second: wolfbeast_1
+  - first:
+      213: -8226071070055734584
+    second: wolfbeast_2
+  - first:
+      213: -7618028527131897216
+    second: wolfbeast_3
+  - first:
+      213: -1221267200757412657
+    second: wolfbeast_4
+  - first:
+      213: -209323415547760398
+    second: wolfbeast_5
+  - first:
+      213: -465887572619968695
+    second: wolfbeast_6
+  - first:
+      213: -3404394315838900942
+    second: wolfbeast_7
+  - first:
+      213: 4822287227636438593
+    second: wolfbeast_8
+  - first:
+      213: -3028939494117749109
+    second: wolfbeast_9
+  - first:
+      213: -2895822892333607758
+    second: wolfbeast_10
+  - first:
+      213: 1406210125582317967
+    second: wolfbeast_11
+  - first:
+      213: 1122917557967917200
+    second: wolfbeast_12
+  - first:
+      213: 551833442028401149
+    second: wolfbeast_13
+  - first:
+      213: -3586628748221080217
+    second: wolfbeast_14
+  - first:
+      213: 7134715014380559787
+    second: wolfbeast_15
+  - first:
+      213: -8996725059843271281
+    second: wolfbeast_16
+  - first:
+      213: 8857944562711864220
+    second: wolfbeast_17
+  - first:
+      213: 4240458170290534035
+    second: wolfbeast_18
+  - first:
+      213: -4255341253882641697
+    second: wolfbeast_19
+  - first:
+      213: 108983293097232330
+    second: wolfbeast_20
+  - first:
+      213: 3158150212911854516
+    second: wolfbeast_21
+  - first:
+      213: 7209828933980171019
+    second: wolfbeast_22
+  - first:
+      213: -683536684303277024
+    second: wolfbeast_23
+  - first:
+      213: 1206709173752447142
+    second: wolfbeast_24
+  - first:
+      213: -4542820179154595450
+    second: wolfbeast_25
+  - first:
+      213: 7587250752525179253
+    second: wolfbeast_26
+  - first:
+      213: -6253667310490666514
+    second: wolfbeast_27
+  - first:
+      213: 5645066996565915951
+    second: wolfbeast_28
+  - first:
+      213: -5524753823445157956
+    second: wolfbeast_29
+  - first:
+      213: 8362315262016725187
+    second: wolfbeast_30
+  - first:
+      213: -1720056742022625311
+    second: wolfbeast_31
+  - first:
+      213: 605160457799650622
+    second: wolfbeast_32
+  - first:
+      213: 1125671337137092886
+    second: wolfbeast_33
+  - first:
+      213: -9056066012523615967
+    second: wolfbeast_34
+  - first:
+      213: 7067404122696595648
+    second: wolfbeast_35
+  - first:
+      213: 8481171683998137059
+    second: wolfbeast_36
+  - first:
+      213: 3254485322539714316
+    second: wolfbeast_37
+  - first:
+      213: 2431545530643166792
+    second: wolfbeast_38
+  - first:
+      213: -3896437845038503117
+    second: wolfbeast_39
+  - first:
+      213: -7010259142572525259
+    second: wolfbeast_40
+  - first:
+      213: -2433593341659540770
+    second: wolfbeast_41
+  - first:
+      213: 9220262591283801250
+    second: wolfbeast_42
+  - first:
+      213: -3759469026554058452
+    second: wolfbeast_43
+  - first:
+      213: 198275867464846353
+    second: wolfbeast_44
+  - first:
+      213: -4163590474683882069
+    second: wolfbeast_45
+  - first:
+      213: -8817525797192050254
+    second: wolfbeast_46
+  - first:
+      213: 6867183180193608136
+    second: wolfbeast_47
+  - first:
+      213: -6666269849961142348
+    second: wolfbeast_48
+  - first:
+      213: -3063945116260295690
+    second: wolfbeast_49
+  - first:
+      213: 38630701753699162
+    second: wolfbeast_50
+  - first:
+      213: 6544940817338295070
+    second: wolfbeast_51
+  - first:
+      213: -5479629759840191369
+    second: wolfbeast_52
+  - first:
+      213: -7667667278892167507
+    second: wolfbeast_53
+  - first:
+      213: -7337965651911168771
+    second: wolfbeast_54
+  - first:
+      213: -5980734965803618800
+    second: wolfbeast_55
+  - first:
+      213: -1990249370692173335
+    second: wolfbeast_56
+  - first:
+      213: 6481097492985115592
+    second: wolfbeast_68.5
+  - first:
+      213: 7561088897974553972
+    second: wolfbeast_58
+  - first:
+      213: -5940756195544122047
+    second: wolfbeast_59
+  - first:
+      213: 3371953061459608357
+    second: wolfbeast_60
+  - first:
+      213: -7644633532906784673
+    second: wolfbeast_61
+  - first:
+      213: 7411259457319412912
+    second: wolfbeast_62
+  - first:
+      213: 8033218958064093303
+    second: wolfbeast_63
+  - first:
+      213: 488842329093016367
+    second: wolfbeast_64
+  - first:
+      213: -3428679520326413410
+    second: wolfbeast_65
+  - first:
+      213: 7475537758404664201
+    second: wolfbeast_66
+  - first:
+      213: 5245432554324096571
+    second: wolfbeast_67
+  - first:
+      213: 1770464707174559836
+    second: wolfbeast_68
+  - first:
+      213: 5090133744637703468
+    second: wolfbeast_69
+  - first:
+      213: 8570276029002136577
+    second: wolfbeast_70
+  - first:
+      213: -3511970316640386365
+    second: wolfbeast_71
+  - first:
+      213: 1102265827329609839
+    second: wolfbeast_72
+  - first:
+      213: -3031415197869403520
+    second: wolfbeast_73
+  - first:
+      213: -877683820366474373
+    second: wolfbeast_74
+  - first:
+      213: -5403755005026839435
+    second: wolfbeast_75
+  - first:
+      213: 5487840580723528406
+    second: wolfbeast_76
+  - first:
+      213: -3210732014570455773
+    second: wolfbeast_77
+  - first:
+      213: -1477620609737986204
+    second: wolfbeast_78
+  - first:
+      213: 2651399397541967201
+    second: wolfbeast_79
+  - first:
+      213: 4778112778361636811
+    second: wolfbeast_80
+  - first:
+      213: 3134835354378881790
+    second: wolfbeast_81
+  - first:
+      213: 2516429924533850383
+    second: wolfbeast_82
+  - first:
+      213: -377813042342927906
+    second: wolfbeast_83
+  - first:
+      213: 4169027232097057867
+    second: wolfbeast_84
+  - first:
+      213: -7463021096371537910
+    second: wolfbeast_85
+  - first:
+      213: 3789026430198195371
+    second: wolfbeast_86
+  - first:
+      213: -8957696887923915798
+    second: wolfbeast_87
+  - first:
+      213: -4987446730266314146
+    second: wolfbeast_57
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wolfbeast_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 364
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5e5f62e1123afc0800000000000000
+      internalID: -3484905273268247087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 365
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3069b133b563070800000000000000
+      internalID: 8085750456054580203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 364
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2e53402ff17dd80800000000000000
+      internalID: -8226071070055734584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 364
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082d287aa63574690800000000000000
+      internalID: -7618028527131897216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 365
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fccc40393ff2d0fe0800000000000000
+      internalID: -1221267200757412657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_5
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 364
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0ba1d6675581df0800000000000000
+      internalID: -209323415547760398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_6
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 364
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fb7b898b5d889f0800000000000000
+      internalID: -465887572619968695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_7
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 365
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2353011386921c0d0800000000000000
+      internalID: -3404394315838900942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_8
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 364
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1465c281fa43ce240800000000000000
+      internalID: 4822287227636438593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 364
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ec5fef39b07f5d0800000000000000
+      internalID: -3028939494117749109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_10
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 365
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4d2021c68ffc7d0800000000000000
+      internalID: -2895822892333607758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_11
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 364
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8934e6a8acd38310800000000000000
+      internalID: 1406210125582317967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0901abac197659f00800000000000000
+      internalID: 1122917557967917200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 260
+        width: 48
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1b84f779188a700800000000000000
+      internalID: 551833442028401149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 312
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d1411082cb93ec0800000000000000
+      internalID: -3586628748221080217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 312
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad9cc51189930360800000000000000
+      internalID: 7134715014380559787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 260
+        width: 48
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85df2a8936352380800000000000000
+      internalID: -8996725059843271281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 312
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c932b8cf5adbdea70800000000000000
+      internalID: 8857944562711864220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 312
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396f11d2d3229da30800000000000000
+      internalID: 4240458170290534035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 260
+        width: 48
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd28244ecadf1f4c0800000000000000
+      internalID: -4255341253882641697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 312
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac743874abf238100800000000000000
+      internalID: 108983293097232330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_21
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 312
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b37fe3d2e004db20800000000000000
+      internalID: 3158150212911854516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 260
+        width: 48
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ba83557357e0460800000000000000
+      internalID: 7209828933980171019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_23
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 312
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024a725d1079386f0800000000000000
+      internalID: -683536684303277024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a048b0a9971fb010800000000000000
+      internalID: 1206709173752447142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 260
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681930fad19a4f0c0800000000000000
+      internalID: -4542820179154595450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 260
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57914164c545b4960800000000000000
+      internalID: 7587250752525179253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_27
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 260
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee93bb6e6b28639a0800000000000000
+      internalID: -6253667310490666514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_28
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 260
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29b797468e475e40800000000000000
+      internalID: 5645066996565915951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_29
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 260
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7f1124ba12453b0800000000000000
+      internalID: -5524753823445157956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_30
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 260
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0a554ec69ec0470800000000000000
+      internalID: 8362315262016725187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_31
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 260
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7c932a1812128e0800000000000000
+      internalID: -1720056742022625311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_32
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 208
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3dc247ea36f56800800000000000000
+      internalID: 605160457799650622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_33
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 209
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61935e7fd103f9f00800000000000000
+      internalID: 1125671337137092886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_34
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 208
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129aa0551f3625280800000000000000
+      internalID: -9056066012523615967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_35
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 208
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c83679da96741260800000000000000
+      internalID: 7067404122696595648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_36
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 209
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea7fcf16bc23b570800000000000000
+      internalID: 8481171683998137059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_37
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 208
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07c3b868214a2d20800000000000000
+      internalID: 3254485322539714316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_38
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 208
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846bc29f6c59eb120800000000000000
+      internalID: 2431545530643166792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_39
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 209
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b67159c621de9c0800000000000000
+      internalID: -3896437845038503117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_40
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 208
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539b787a37e86be90800000000000000
+      internalID: -7010259142572525259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_41
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 208
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed290aedfb32a3ed0800000000000000
+      internalID: -2433593341659540770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_42
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 209
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac2b49c9f3f4ff70800000000000000
+      internalID: 9220262591283801250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_43
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 208
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c296920c6dea3dbc0800000000000000
+      internalID: -3759469026554058452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_44
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 156
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c46c7d9da60c200800000000000000
+      internalID: 198275867464846353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_45
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 157
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5644ed584f736c0800000000000000
+      internalID: -4163590474683882069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_46
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 156
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b95684310bd1a580800000000000000
+      internalID: -8817525797192050254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_47
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 156
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c13afee7b22d4f50800000000000000
+      internalID: 6867183180193608136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_48
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 157
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b76b2014e6ac73a0800000000000000
+      internalID: -6666269849961142348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_49
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 156
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb1306762eaa75d0800000000000000
+      internalID: -3063945116260295690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_50
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 156
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b04772b6e398000800000000000000
+      internalID: 38630701753699162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_51
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 157
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13676d2ffc44da50800000000000000
+      internalID: 6544940817338295070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_52
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 156
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cf01804c174f3b0800000000000000
+      internalID: -5479629759840191369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_53
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 156
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae0fb12c39f69590800000000000000
+      internalID: -7667667278892167507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_54
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 157
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc21d72e1f4a2a90800000000000000
+      internalID: -7337965651911168771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_55
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 156
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e64836c39200da0800000000000000
+      internalID: -5980734965803618800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1c27dfdb63164e0800000000000000
+      internalID: -1990249370692173335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_68.5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 52
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c37d00e4db71f950800000000000000
+      internalID: 6481097492985115592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_58
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 104
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d4ce6da426ee860800000000000000
+      internalID: 7561088897974553972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_59
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 104
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d346337b13e8da0800000000000000
+      internalID: -5940756195544122047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_60
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 52
+        width: 48
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523479ba1759bce20800000000000000
+      internalID: 3371953061459608357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_61
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 104
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f583d090e4ec8e590800000000000000
+      internalID: -7644633532906784673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_62
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 104
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b427cbb5351ad660800000000000000
+      internalID: 7411259457319412912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_63
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 52
+        width: 48
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778085e941abb7f60800000000000000
+      internalID: 8033218958064093303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_64
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 104
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b83c02287b8c600800000000000000
+      internalID: 488842329093016367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_65
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 104
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9399466422ea60d0800000000000000
+      internalID: -3428679520326413410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_66
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 52
+        width: 48
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bdab2fbf17eb760800000000000000
+      internalID: 7475537758404664201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_67
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 104
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36f1cddd158bc840800000000000000
+      internalID: 5245432554324096571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5071865544f19810800000000000000
+      internalID: 1770464707174559836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_69
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 52
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25fb5c0ca9c3a640800000000000000
+      internalID: 5090133744637703468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_70
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 52
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cb7bf14acbfe670800000000000000
+      internalID: 8570276029002136577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_71
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 52
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c20feeaa99f24fc0800000000000000
+      internalID: -3511970316640386365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_72
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 52
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60980e0ee80c4f00800000000000000
+      internalID: 1102265827329609839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_73
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 52
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082164c40ff3ee5d0800000000000000
+      internalID: -3031415197869403520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_74
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 52
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73d2fd2737d1d3f0800000000000000
+      internalID: -877683820366474373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_75
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 52
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574d22804710205b0800000000000000
+      internalID: -5403755005026839435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_76
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2dffdaee9b82c40800000000000000
+      internalID: 5487840580723528406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_77
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32dbd827e303173d0800000000000000
+      internalID: -3210732014570455773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_78
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f65cb52ef6e7be0800000000000000
+      internalID: -1477620609737986204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_79
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1657c2054b9abc420800000000000000
+      internalID: 2651399397541967201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_80
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc70003a1444f4240800000000000000
+      internalID: 4778112778361636811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_81
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 0
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efac61f452c218b20800000000000000
+      internalID: 3134835354378881790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_82
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 0
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01d00a0fa72ce220800000000000000
+      internalID: 2516429924533850383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_83
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1e3ab2a0db1caf0800000000000000
+      internalID: -377813042342927906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_84
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 0
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c331cdd2c5bd930800000000000000
+      internalID: 4169027232097057867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_85
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 0
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0837878ad50e6890800000000000000
+      internalID: -7463021096371537910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_86
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4a7809673559430800000000000000
+      internalID: 3789026430198195371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_87
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 0
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae34cade32edfa380800000000000000
+      internalID: -8957696887923915798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_57
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 104
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5afa4a9f9709cab0800000000000000
+      internalID: -4987446730266314146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -45,14 +45,21 @@ public class PlayerStats : MonoBehaviour
 
     public void LevelUp()
     {
-        currentLevel++;
-        currentHP = HPLevels[currentLevel];
-        currentExp -= toLevelUp[currentLevel - 1];
+        if (currentLevel == toLevelUp.Length - 1)
+        {
+            currentExp = toLevelUp[currentLevel];
+        }
+        else
+        {
+            currentLevel++;
+            currentHP = HPLevels[currentLevel];
+            currentExp -= toLevelUp[currentLevel - 1];
 
-        thePlayerHealth.playerMaxHealth = currentHP;
-        thePlayerHealth.playerCurrentHealth = currentHP;
+            thePlayerHealth.playerMaxHealth = currentHP;
+            thePlayerHealth.playerCurrentHealth = currentHP;
 
-        currentAttack = attackLevels[currentLevel];
-        currentDefence = defenceLevels[currentLevel];
+            currentAttack = attackLevels[currentLevel];
+            currentDefence = defenceLevels[currentLevel];
+        }
     }
 }

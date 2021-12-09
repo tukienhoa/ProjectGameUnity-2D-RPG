@@ -24,9 +24,16 @@ public class EnemyHealthManager : MonoBehaviour
     {
         if (CurrentHealth <= 0)
         {
-            Destroy(gameObject);
-
             thePlayerStats.AddExperience(expToGive);
+
+            if (gameObject.GetComponent<EnemyController>() != null)
+            {
+                Destroy(transform.parent.gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
