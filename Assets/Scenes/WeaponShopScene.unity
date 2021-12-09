@@ -3342,6 +3342,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: Hello
+  dialogLines:
+  - Hello
+  - Nice
+  - Bye!
 --- !u!1 &1456107067
 GameObject:
   m_ObjectHideFlags: 0

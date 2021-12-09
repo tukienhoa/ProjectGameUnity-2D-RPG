@@ -21,10 +21,17 @@ public class NPCMovement : MonoBehaviour
     public Collider2D walkZone;
     private bool hasWalkZone;
 
+    public bool canMove;
+    private DialogManager theDM;
+
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
+        theDM = FindObjectOfType<DialogManager>();
+        animator = GetComponent<Animator>();
 
         waitCounter = waitTime;
         walkCounter = walkTime;
@@ -37,11 +44,24 @@ public class NPCMovement : MonoBehaviour
             maxWalkPoint = walkZone.bounds.max;
             hasWalkZone = true;
         }
+
+        canMove = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!theDM.dialogActive)
+        {
+            canMove = true;
+        }
+
+        if (!canMove)
+        {
+            myRigidbody.velocity = Vector2.zero;
+            return;
+        }
+        
         if (isWalking)
         {
             walkCounter -= Time.deltaTime;
@@ -99,6 +119,9 @@ public class NPCMovement : MonoBehaviour
                 ChooseDirection();
             }
         }
+
+        animator.SetFloat("Move X", myRigidbody.velocity.x);
+        animator.SetFloat("Move Y", myRigidbody.velocity.y);
     }
 
     public void ChooseDirection()

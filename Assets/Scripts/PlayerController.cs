@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 lastVelocity;
 
+    public bool canMove;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,12 +45,20 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        canMove = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         playerMoving = false;
+
+        if (!canMove)
+        {
+            myRigidBody.velocity = Vector2.zero;
+            return;
+        }
 
         if (!attacking && !isDashing)
         {
