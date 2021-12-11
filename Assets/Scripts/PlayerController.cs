@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
 
     public bool canMove;
 
+    public string startPoint;
+
     // Start is called before the first frame update
     void Start()
     {

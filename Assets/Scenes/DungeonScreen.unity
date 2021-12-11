@@ -542,6 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDirection: {x: 0, y: -1}
+  pointName: Dungeon In
 --- !u!4 &534241933
 Transform:
   m_ObjectHideFlags: 0
@@ -706,6 +707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: VillageScreen
+  exitPoint: Dungeon Out
 --- !u!61 &767626653
 BoxCollider2D:
   m_ObjectHideFlags: 0
