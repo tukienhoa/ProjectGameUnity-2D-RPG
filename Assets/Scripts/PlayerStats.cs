@@ -13,11 +13,13 @@ public class PlayerStats : MonoBehaviour
     public int[] attackLevels;
 
     public int[] MPLevels;
+    public int[] APLevels;
     public int[] defenceLevels;
 
     public int currentHP;
     public int currentAttack;
     public int currentMP;
+    public int currentAP;
     public int currentDefence;
 
     private PlayerHealthManager thePlayerHealth;
@@ -29,6 +31,7 @@ public class PlayerStats : MonoBehaviour
         currentHP = HPLevels[1];
         currentMP = MPLevels[1];
         currentAttack = attackLevels[1];
+        currentAP = APLevels[1];
         currentDefence = defenceLevels[1];
 
         thePlayerHealth = FindObjectOfType<PlayerHealthManager>();
@@ -69,6 +72,7 @@ public class PlayerStats : MonoBehaviour
             thePlayerMP.playerCurrentMP = currentMP;
 
             currentAttack = attackLevels[currentLevel];
+            currentAP = APLevels[currentLevel];
             currentDefence = defenceLevels[currentLevel];
         }
     }

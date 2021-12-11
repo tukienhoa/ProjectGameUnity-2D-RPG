@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 57427912}
   m_Layer: 0
   m_Name: Golems
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1117,9 +1117,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3660525215539453032, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 3660525215539453037, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
+      propertyPath: castSpellTime
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3660525215539453038, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
       propertyPath: m_RootOrder
@@ -61802,6 +61802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 8908458274944003204, guid: 4ace6f52c6fdedb48967a323d5cfd889, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8908458274944003206, guid: 4ace6f52c6fdedb48967a323d5cfd889, type: 3}
       propertyPath: followTarget
       value: 
@@ -62548,7 +62552,7 @@ GameObject:
   - component: {fileID: 620862920}
   m_Layer: 0
   m_Name: Wolves
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62659,7 +62663,7 @@ GameObject:
   - component: {fileID: 761987243}
   m_Layer: 0
   m_Name: Chests
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66406,7 +66410,7 @@ GameObject:
   - component: {fileID: 1027078774}
   m_Layer: 0
   m_Name: Objects
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84454,6 +84458,74 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 313079024292052243, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 313079024292052243, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085127856339816, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085127856339816, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085127894861240, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085127894861240, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085128583967442, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: APLevels.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085128583967442, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: APLevels.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085128583967442, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: APLevels.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085128583967442, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: APLevels.Array.data[2]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085128583967442, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: APLevels.Array.data[3]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085128583967442, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: APLevels.Array.data[4]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085128583967442, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: APLevels.Array.data[5]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085128583967442, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: APLevels.Array.data[6]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085128583967442, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: APLevels.Array.data[7]
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085128583967442, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: APLevels.Array.data[8]
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107085128583967442, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: APLevels.Array.data[9]
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7107085128583967443, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: playerHealth
       value: 
@@ -84999,7 +85071,7 @@ GameObject:
   - component: {fileID: 1791284404}
   m_Layer: 0
   m_Name: Trees
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85589,7 +85661,7 @@ GameObject:
   - component: {fileID: 2093293702}
   m_Layer: 0
   m_Name: Bears
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

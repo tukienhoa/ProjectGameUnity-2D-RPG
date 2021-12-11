@@ -31,6 +31,14 @@ public class PlayerController : MonoBehaviour
 
     public string startPoint;
 
+    // Cast Spell
+    private bool castingSpell;
+    public float castSpellTime;
+    private float castSpellTimeCounter;
+
+    [SerializeField]
+    private GameObject[] spellPrefabs;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,7 +70,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (!attacking && !isDashing)
+        if (!attacking && !isDashing && !castingSpell)
         {
             // Move right / left
             if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
@@ -136,6 +144,19 @@ public class PlayerController : MonoBehaviour
                     }
                 }
             }
+
+            // Cast spell 1
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                if (GetComponent<PlayerMPManager>().playerCurrentMP >= spellPrefabs[0].GetComponent<Spell>().MPCost)
+                {
+                    castingSpell = true;
+                    myRigidBody.velocity = Vector2.zero;
+                    anim.SetBool("Spell", true);
+                    CastSpell(0);
+                    castSpellTimeCounter = castSpellTime;
+                }
+            }
         }
 
         if (attackTimeCounter > 0)
@@ -146,6 +167,16 @@ public class PlayerController : MonoBehaviour
         {
             attacking = false;
             anim.SetBool("Attack", false);
+        }
+
+        if (castSpellTimeCounter > 0)
+        {
+            castSpellTimeCounter -= Time.deltaTime;
+        }
+        if (castSpellTimeCounter <= 0)
+        {
+            castingSpell = false;
+            anim.SetBool("Spell", false);
         }
 
         anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
@@ -163,5 +194,12 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
         isDashing = false;
+    }
+
+    public void CastSpell(int spellNumber)
+    {
+        GameObject spellObject = Instantiate(spellPrefabs[spellNumber], transform.position, Quaternion.identity);
+        Spell spell = spellObject.GetComponent<Spell>();
+        spell.Cast(lastVelocity, 50);
     }
 }

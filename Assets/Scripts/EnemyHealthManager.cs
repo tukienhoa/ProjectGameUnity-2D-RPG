@@ -40,10 +40,22 @@ public class EnemyHealthManager : MonoBehaviour
     public void HurtEnemy(int damageToGive)
     {
         CurrentHealth -= damageToGive;
+        StartCoroutine("HurtColor");
     }
 
     public void SetMaxHealth()
     {
         CurrentHealth = MaxHealth;
+    }
+
+    IEnumerator HurtColor()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
+            yield return new WaitForSeconds(.1f);
+            GetComponent<SpriteRenderer>().color = Color.white;
+            yield return new WaitForSeconds(.1f);
+        }
     }
 }

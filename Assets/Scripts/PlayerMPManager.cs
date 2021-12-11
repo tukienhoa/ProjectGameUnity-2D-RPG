@@ -18,4 +18,9 @@ public class PlayerMPManager : MonoBehaviour
     {
 
     }
+
+    public void ConsumeMP(int usedMP)
+    {
+        playerCurrentMP -= usedMP;
+    }
 }
