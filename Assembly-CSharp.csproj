@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\HurtEnemy.cs" />
      <Compile Include="Assets\Scripts\FloatingNumbers.cs" />
      <Compile Include="Assets\Scripts\LoadNewArea.cs" />
+     <Compile Include="Assets\Scripts\EnemyUI.cs" />
      <Compile Include="Assets\Scripts\DialogManager.cs" />
      <Compile Include="Assets\Scripts\HurtPlayer.cs" />
      <Compile Include="Assets\Scripts\RewardText.cs" />
@@ -56,7 +57,7 @@
      <Compile Include="Assets\Scripts\UIManager.cs" />
      <Compile Include="Assets\Scripts\PlayerHealthManager.cs" />
      <Compile Include="Assets\Scripts\EnemyHealthManager.cs" />
-     <Compile Include="Assets\Scripts\EnemyUI.cs" />
+     <Compile Include="Assets\Scripts\PlayerMPManager.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

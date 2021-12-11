@@ -11,14 +11,10 @@ public class PlayerHealthManager : MonoBehaviour
     public float flashLength;
     private float flashCounter;
 
-    private SpriteRenderer playerSprite;
-
     // Start is called before the first frame update
     void Start()
     {
         playerCurrentHealth = playerMaxHealth;
-
-        playerSprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame

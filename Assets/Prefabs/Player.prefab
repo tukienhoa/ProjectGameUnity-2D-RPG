@@ -304,18 +304,19 @@ GameObject:
   m_Component:
   - component: {fileID: 3660525215539453038}
   - component: {fileID: 3660525215539453039}
-  - component: {fileID: 3660525215539453037}
   - component: {fileID: 3660525215539453036}
   - component: {fileID: 3660525215539453027}
   - component: {fileID: 3660525215539453026}
+  - component: {fileID: 3660525215539453037}
   - component: {fileID: 2079770628}
+  - component: {fileID: 3187699579135454913}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3660525215539453038
 Transform:
   m_ObjectHideFlags: 0
@@ -383,22 +384,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3660525215539453037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3660525215539453032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b7121c2d41782b4e9eb179f7de2152c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  diagonalMoveModifier: 0.75
-  lastMove: {x: 0, y: 0}
-  attackTime: 0.2
 --- !u!95 &3660525215539453036
 Animator:
   serializedVersion: 3
@@ -465,6 +450,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &3660525215539453037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3660525215539453032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7121c2d41782b4e9eb179f7de2152c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  diagonalMoveModifier: 0.75
+  lastMove: {x: 0, y: 0}
+  attackTime: 0.2
+  canMove: 0
 --- !u!114 &2079770628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,3 +482,17 @@ MonoBehaviour:
   playerMaxHealth: 50
   playerCurrentHealth: 0
   flashLength: 0.5
+--- !u!114 &3187699579135454913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3660525215539453032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886db40347420644b9f8e6318b01a3e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMaxMP: 50
+  playerCurrentMP: 0

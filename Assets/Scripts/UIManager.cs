@@ -5,18 +5,26 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    // HP bar
     public Slider healthBar;
     public Text HPText;
     public PlayerHealthManager playerHealth;
 
+    // Player Level
     private PlayerStats thePS;
     public Text levelText;
 
     private static bool UIExists;
 
+    // MP bar
+    public Slider MPBar;
+    public Text MPText;
+
+
     // EXP bar
     public Slider expBar;
     public Text expText;
+    public PlayerMPManager playerMP;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +39,7 @@ public class UIManager : MonoBehaviour
             Destroy(gameObject);
         }
         playerHealth = FindObjectOfType<PlayerHealthManager>();
+        playerMP = FindObjectOfType<PlayerMPManager>();
         thePS = GetComponent<PlayerStats>();
     }
 
@@ -41,6 +50,11 @@ public class UIManager : MonoBehaviour
         healthBar.maxValue = playerHealth.playerMaxHealth;
         healthBar.value = playerHealth.playerCurrentHealth;
         HPText.text = playerHealth.playerCurrentHealth + " / " + playerHealth.playerMaxHealth;
+
+        // MP bar
+        MPBar.maxValue = playerMP.playerMaxMP;
+        MPBar.value = playerMP.playerCurrentMP;
+        MPText.text = playerMP.playerCurrentMP + " / " + playerMP.playerMaxMP;
 
         // EXP bar
         expBar.maxValue = thePS.toLevelUp[thePS.currentLevel];
