@@ -668,6 +668,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6043906740587172351, guid: af83cf1d4edae6a42a832fea7a6dc7c6, type: 3}
   m_PrefabInstance: {fileID: 123854745}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &128051698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 128051700}
+  - component: {fileID: 128051699}
+  m_Layer: 0
+  m_Name: Start Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &128051699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128051698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352567700af06c747a344e669769e09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startDirection: {x: 0, y: 0}
+  pointName: Ice Map Start
+--- !u!4 &128051700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128051698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.79, y: -1.8, z: -117.87552}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &147882024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7547914522998313947, guid: a37d6b625bd529b4194198127fcd91c5, type: 3}
@@ -1117,9 +1162,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3660525215539453037, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
-      propertyPath: castSpellTime
-      value: 0.5
+    - target: {fileID: 3660525215539453032, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3660525215539453038, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
       propertyPath: m_RootOrder
@@ -61804,7 +61849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8908458274944003204, guid: 4ace6f52c6fdedb48967a323d5cfd889, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8908458274944003206, guid: 4ace6f52c6fdedb48967a323d5cfd889, type: 3}
       propertyPath: followTarget
@@ -84460,27 +84505,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 313079024292052243, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 313079024292052243, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7107085127856339816, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7107085127856339816, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7107085127894861240, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7107085127894861240, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7107085128583967442, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: APLevels.Array.size
@@ -84536,7 +84581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7107085128583967448, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7107085128583967452, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_Pivot.x
@@ -85931,6 +85976,10 @@ PrefabInstance:
     - target: {fileID: 109537205745011595, guid: 71eff5833711b8642931d2978bdeb4a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 109537206288295538, guid: 71eff5833711b8642931d2978bdeb4a0, type: 3}
+      propertyPath: moveSpeed
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71eff5833711b8642931d2978bdeb4a0, type: 3}

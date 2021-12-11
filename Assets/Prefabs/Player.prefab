@@ -468,7 +468,7 @@ MonoBehaviour:
   attackTime: 0.2
   canMove: 0
   startPoint: 
-  castSpellTime: 1
+  castSpellTime: 0.5
   spellPrefabs:
   - {fileID: 5968523042479059729, guid: d4a9111cfe776794b81ff3072fec755b, type: 3}
   - {fileID: 0}
