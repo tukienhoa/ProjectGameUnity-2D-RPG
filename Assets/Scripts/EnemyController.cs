@@ -7,8 +7,7 @@ public class EnemyController : MonoBehaviour
     private GameObject thePlayer;
     private Rigidbody2D rb;
     public float moveSpeed = 4.0f;
-    // public float MaxDist = 10f;
-    // public float MinDist = 5f;
+    
     private Vector2 movement;
     private Vector2 minWalkPoint;
     private Vector2 maxWalkPoint;
