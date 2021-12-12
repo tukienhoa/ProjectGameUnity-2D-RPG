@@ -8,7 +8,7 @@ public class UIManager : MonoBehaviour
     // HP bar
     public Slider healthBar;
     public Text HPText;
-    public PlayerHealthManager playerHealth;
+    private PlayerHealthManager playerHealth;
 
     // Player Level
     private PlayerStats thePS;
@@ -24,7 +24,7 @@ public class UIManager : MonoBehaviour
     // EXP bar
     public Slider expBar;
     public Text expText;
-    public PlayerMPManager playerMP;
+    private PlayerMPManager playerMP;
 
     // Start is called before the first frame update
     void Start()
