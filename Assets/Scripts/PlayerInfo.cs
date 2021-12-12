@@ -24,7 +24,7 @@ public class PlayerInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textLevel.text = "" + PS.currentLevel;
+        textLevel.text = "Level " + PS.currentLevel;
         textExp.text = PS.currentExp + " / " + PS.toLevelUp[PS.currentLevel];
         textHP.text = "" + PS.HPLevels[PS.currentLevel];
         textMP.text = "" + PS.MPLevels[PS.currentLevel];

@@ -41,6 +41,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GameObject[] spellPrefabs;
 
+    // Inventory
+    public GameObject inventoryObj;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -161,6 +164,12 @@ public class PlayerController : MonoBehaviour
                     CastSpell(0);
                     castSpellTimeCounter = castSpellTime;
                 }
+            }
+
+            // Toggle Inventory
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                inventoryObj.SetActive(!inventoryObj.activeSelf);
             }
         }
 
