@@ -31,6 +31,8 @@ public class PlayerController : MonoBehaviour
 
     public string startPoint;
 
+    private SFXManager sfxMan;
+
     // Cast Spell
     private bool castingSpell;
     public float castSpellTime;
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
         thePS = FindObjectOfType<PlayerStats>();
+        sfxMan = FindObjectOfType<SFXManager>();
 
         if (!playerExists)
         {
@@ -106,6 +109,8 @@ public class PlayerController : MonoBehaviour
                 attacking = true;
                 myRigidBody.velocity = Vector2.zero;
                 anim.SetBool("Attack", true);
+
+                sfxMan.playerAttack.Play();
             }
 
             // Diagonal moves

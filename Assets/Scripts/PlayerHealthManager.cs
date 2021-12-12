@@ -11,10 +11,13 @@ public class PlayerHealthManager : MonoBehaviour
     public float flashLength;
     private float flashCounter;
 
+    private SFXManager sfxMan;
+
     // Start is called before the first frame update
     void Start()
     {
         playerCurrentHealth = playerMaxHealth;
+        sfxMan = FindObjectOfType<SFXManager>();
     }
 
     // Update is called once per frame
@@ -23,6 +26,7 @@ public class PlayerHealthManager : MonoBehaviour
         if (playerCurrentHealth <= 0)
         {
             gameObject.SetActive(false);
+            sfxMan.playerDead.Play();
         }
 
     }
@@ -46,6 +50,7 @@ public class PlayerHealthManager : MonoBehaviour
 
         // Flash effect when player gets hit by enemy
         StartCoroutine("HurtColor");
+        sfxMan.playerHurt.Play();
     }
 
     public void SetMaxHealth()

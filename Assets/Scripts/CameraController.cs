@@ -33,6 +33,17 @@ public class CameraController : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (boundBox == null)
+        {
+            Scene scene = SceneManager.GetActiveScene();
+            if (scene.name != "Menu")
+            {
+               boundBox = FindObjectOfType<Bounds>().GetComponent<BoxCollider2D>();
+               minBounds = boundBox.bounds.min;
+               maxBounds = boundBox.bounds.max; 
+            }
+        }
+        
         minBounds = boundBox.bounds.min;
         maxBounds = boundBox.bounds.max;
 
