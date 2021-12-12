@@ -34,6 +34,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         thePlayer = GameObject.Find("Player");
+
         rb = GetComponent<Rigidbody2D>();
 
         anim = GetComponent<Animator>();
@@ -58,11 +59,12 @@ public class EnemyController : MonoBehaviour
 
         if (isChasing)
         {
-            Vector3 direction = thePlayer.transform.position - transform.position;
-
+            Vector3 playerPosition = new Vector3(thePlayer.transform.position.x, thePlayer.transform.position.y, 0);
+            Vector3 direction = playerPosition - transform.position;
             direction.Normalize();
             movement = direction;
             rb.velocity = direction;
+            MoveCharacter(movement);
         }
 
         if (!isChasing)
@@ -131,17 +133,9 @@ public class EnemyController : MonoBehaviour
         anim.SetFloat("MoveY", rb.velocity.y);
     }
 
-    private void FixedUpdate()
-    {
-        if (isChasing)
-        {
-            MoveCharacter(movement);
-        }
-    }
-
     void MoveCharacter(Vector2 direction)
     {
-        rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+        rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime * 10));
     }
 
     public void ChooseDirection()
