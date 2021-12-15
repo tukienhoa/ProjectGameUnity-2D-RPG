@@ -17,6 +17,7 @@ public class Spell : MonoBehaviour
     public float duration;
 
     public int MPCost;
+    public int CD;
     private PlayerMPManager playerMPManager;
 
     Animator anim;

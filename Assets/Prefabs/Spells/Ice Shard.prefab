@@ -234,3 +234,4 @@ MonoBehaviour:
   damageNumber: {fileID: 3122932881163162569, guid: ea989f1de18917a489b26a48c6b1c743, type: 3}
   duration: 2
   MPCost: 5
+  CD: 6

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -38,6 +39,12 @@ public class PlayerController : MonoBehaviour
     public float castSpellTime;
     private float castSpellTimeCounter;
 
+    private float spell1CD;
+    private float spell1CDTimer = 0.0f;
+
+    [SerializeField]
+    private Button spell1Btn;
+
     [SerializeField]
     private GameObject[] spellPrefabs;
 
@@ -51,6 +58,8 @@ public class PlayerController : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody2D>();
         thePS = FindObjectOfType<PlayerStats>();
         sfxMan = FindObjectOfType<SFXManager>();
+
+        spell1CD = spellPrefabs[0].GetComponent<Spell>().CD;
 
         if (!playerExists)
         {
@@ -156,13 +165,20 @@ public class PlayerController : MonoBehaviour
             // Cast spell 1
             if (Input.GetKeyDown(KeyCode.Q))
             {
+                Debug.Log('Q');
                 if (GetComponent<PlayerMPManager>().playerCurrentMP >= spellPrefabs[0].GetComponent<Spell>().MPCost)
                 {
-                    castingSpell = true;
-                    myRigidBody.velocity = Vector2.zero;
-                    anim.SetBool("Spell", true);
-                    CastSpell(0);
-                    castSpellTimeCounter = castSpellTime;
+
+                    if (spell1CDTimer <= 0.0f)
+                    {
+                        castingSpell = true;
+                        myRigidBody.velocity = Vector2.zero;
+                        anim.SetBool("Spell", true);
+                        CastSpell(0);
+                        castSpellTimeCounter = castSpellTime;
+                        spell1CDTimer = spell1CD;
+                        spell1Btn.GetComponent<SpellCooldown>().UseSpell();
+                    }
                 }
             }
 
@@ -191,6 +207,11 @@ public class PlayerController : MonoBehaviour
         {
             castingSpell = false;
             anim.SetBool("Spell", false);
+        }
+
+        if (spell1CDTimer > 0)
+        {
+            spell1CDTimer -= Time.deltaTime;
         }
 
         anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
