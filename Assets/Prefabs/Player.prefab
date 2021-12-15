@@ -310,6 +310,7 @@ GameObject:
   - component: {fileID: 3660525215539453037}
   - component: {fileID: 2079770628}
   - component: {fileID: 3187699579135454913}
+  - component: {fileID: 1293891710}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -504,3 +505,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMaxMP: 50
   playerCurrentMP: 0
+--- !u!114 &1293891710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3660525215539453032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd6098f523226748b2aad292ee96307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HPPotionStock: 5
+  MPPotionStock: 5
+  healEffect: {fileID: 8392570140363154999, guid: 5fc465acd37b992408070b98be69ee3a, type: 3}
+  manaEffect: {fileID: 950192746803460930, guid: 216b5f68fdf773a43928275dd6aa1886, type: 3}

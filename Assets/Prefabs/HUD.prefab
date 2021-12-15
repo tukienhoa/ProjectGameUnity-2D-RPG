@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 1610102903075500009}
   - component: {fileID: 2608743097383623563}
   m_Layer: 5
-  m_Name: Stock
+  m_Name: HPPotionStock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -772,6 +772,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryObj: {fileID: 0}
+  HPPotionStockText: {fileID: 2608743097383623563}
+  MPPotionStockText: {fileID: 7931526549976414706}
 --- !u!1 &6733036518261106217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,7 +1328,7 @@ GameObject:
   - component: {fileID: 2323427961294235107}
   - component: {fileID: 7931526549976414706}
   m_Layer: 5
-  m_Name: Stock
+  m_Name: MPPotionStock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

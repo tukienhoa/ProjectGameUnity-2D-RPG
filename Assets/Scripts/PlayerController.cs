@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour
     // Inventory
     public GameObject inventoryObj;
 
+    private Inventory playerInventory;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +60,7 @@ public class PlayerController : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody2D>();
         thePS = FindObjectOfType<PlayerStats>();
         sfxMan = FindObjectOfType<SFXManager>();
+        playerInventory = GetComponent<Inventory>();
 
         spell1CD = spellPrefabs[0].GetComponent<Spell>().CD;
 
@@ -185,6 +188,18 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.B))
             {
                 inventoryObj.SetActive(!inventoryObj.activeSelf);
+            }
+
+            // Use HP Potion
+            if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                playerInventory.UseHPPotion();
+            }
+
+            // Use MP Potion
+            if (Input.GetKeyDown(KeyCode.Keypad2) || Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                playerInventory.UseMPPotion();
             }
         }
 

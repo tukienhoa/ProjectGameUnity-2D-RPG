@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class HUDController : MonoBehaviour
@@ -9,9 +10,20 @@ public class HUDController : MonoBehaviour
 
     public GameObject inventoryObj;
 
+    [SerializeField]
+    private Text HPPotionStockText;
+    [SerializeField]
+    private Text MPPotionStockText;
+
+    private Inventory playerInventory;
+
     // Start is called before the first frame update
     void Start()
     {
+        playerInventory = FindObjectOfType<Inventory>();
+        HPPotionStockText.text = "" + playerInventory.GetHPPotionStock();
+        MPPotionStockText.text = "" + playerInventory.GetMPPotionStock();
+
         if (!HUDExists)
         {
             HUDExists = true;
@@ -26,7 +38,8 @@ public class HUDController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        HPPotionStockText.text = "" + playerInventory.GetHPPotionStock();
+        MPPotionStockText.text = "" + playerInventory.GetMPPotionStock();
     }
 
     public void ClickButton()
