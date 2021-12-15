@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IceMapScene.unity
     guid: bfe8f061a18f9ea49848539711986da0
+  - enabled: 1
+    path: Assets/Scenes/LavaScene.unity
+    guid: 0439d7696f0e0c749af3593e2f132c54
   m_configObjects: {}

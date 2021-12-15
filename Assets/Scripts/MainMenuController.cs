@@ -31,6 +31,15 @@ public class MainMenuController : MonoBehaviour
             }
         }
 
+        if (name.Equals("Volcano"))
+        {
+            SceneManager.LoadScene("LavaScene");
+            if (thePlayer != null)
+            {
+                thePlayer.startPoint = "Volcano Start";
+            }
+        }
+
         if (name.Equals("Cancel"))
         {
             SceneManager.LoadScene("VillageScreen");
