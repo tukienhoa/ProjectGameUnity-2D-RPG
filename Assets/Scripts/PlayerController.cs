@@ -165,7 +165,6 @@ public class PlayerController : MonoBehaviour
             // Cast spell 1
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                Debug.Log('Q');
                 if (GetComponent<PlayerMPManager>().playerCurrentMP >= spellPrefabs[0].GetComponent<Spell>().MPCost)
                 {
 

@@ -1420,7 +1420,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1478,13 +1478,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 7107085127231611003}
   HPText: {fileID: 7107085127982721952}
-  playerHealth: {fileID: 0}
   levelText: {fileID: 7107085127236258174}
   MPBar: {fileID: 3666338239661090818}
   MPText: {fileID: 804204138688167910}
   expBar: {fileID: 7107085127135419957}
   expText: {fileID: 7107085127523042229}
-  playerMP: {fileID: 0}
 --- !u!114 &7107085128583967442
 MonoBehaviour:
   m_ObjectHideFlags: 0

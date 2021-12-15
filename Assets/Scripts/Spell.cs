@@ -22,12 +22,15 @@ public class Spell : MonoBehaviour
 
     Animator anim;
 
+    AudioSource audioSource;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         thePS = FindObjectOfType<PlayerStats>();
         anim = GetComponent<Animator>();
         playerMPManager = FindObjectOfType<PlayerMPManager>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Start is called before the first frame update
@@ -56,6 +59,7 @@ public class Spell : MonoBehaviour
             currentDamage = damageToGive + thePS.currentAP;
 
             other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(currentDamage);
+
             Instantiate(damageBurst, hitPoint.position, hitPoint.rotation);
 
             var clone = (GameObject)Instantiate(damageNumber, hitPoint.position, Quaternion.Euler(Vector3.zero));
@@ -71,6 +75,7 @@ public class Spell : MonoBehaviour
 
     public void Cast(Vector2 direction, float force)
     {
+        audioSource.Play();
         anim.SetFloat("MoveX", direction.x);
         anim.SetFloat("MoveY", direction.y);
         rb.AddForce(direction * force);
