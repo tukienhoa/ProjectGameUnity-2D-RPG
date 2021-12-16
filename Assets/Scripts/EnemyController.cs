@@ -61,9 +61,7 @@ public class EnemyController : MonoBehaviour
             Vector3 playerPosition = new Vector3(thePlayer.transform.position.x, thePlayer.transform.position.y, 0);
             Vector3 direction = playerPosition - transform.position;
             direction.Normalize();
-            movement = direction;
-            rb.velocity = direction;
-            MoveCharacter(movement);
+            rb.velocity = direction * moveSpeed;
         }
 
         if (!isChasing)
@@ -130,11 +128,6 @@ public class EnemyController : MonoBehaviour
 
         anim.SetFloat("MoveX", rb.velocity.x);
         anim.SetFloat("MoveY", rb.velocity.y);
-    }
-
-    void MoveCharacter(Vector2 direction)
-    {
-        rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime * 10));
     }
 
     public void ChooseDirection()
