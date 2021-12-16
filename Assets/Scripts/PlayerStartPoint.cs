@@ -14,7 +14,7 @@ public class PlayerStartPoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        thePlayer = FindObjectOfType<PlayerController>();
+        thePlayer = GameObject.Find("Player").GetComponent<PlayerController>();
 
         if (thePlayer.startPoint == pointName)
         {

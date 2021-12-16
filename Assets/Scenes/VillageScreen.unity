@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352567700af06c747a344e669769e09f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0}
+  startDirection: {x: 0, y: -1}
   pointName: House Secret Out
 --- !u!4 &386033332
 Transform:
@@ -305,7 +305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386033330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.28, y: 7.7, z: -79.52762}
+  m_LocalPosition: {x: 14.28, y: 7.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4715,7 +4715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352567700af06c747a344e669769e09f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0}
+  startDirection: {x: 0, y: -1}
   pointName: House Out
 --- !u!4 &714559108
 Transform:
@@ -4725,7 +4725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714559106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.08, y: -3.35, z: -40.597145}
+  m_LocalPosition: {x: 14.08, y: -3.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -50229,7 +50229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026968179}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.98, y: 4.05, z: -40.05935}
+  m_LocalPosition: {x: 12.98, y: 4.05, z: 0}
   m_LocalScale: {x: 78, y: 44, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -50333,7 +50333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8908458274944003192, guid: 4ace6f52c6fdedb48967a323d5cfd889, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -60.597145
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 8908458274944003192, guid: 4ace6f52c6fdedb48967a323d5cfd889, type: 3}
       propertyPath: m_LocalRotation.w
@@ -50420,7 +50420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172628010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.64, y: -11.05, z: -40.597145}
+  m_LocalPosition: {x: 38.64, y: -11.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59245,7 +59245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452257903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.77, y: -10.74, z: -40.597145}
+  m_LocalPosition: {x: 40.77, y: -10.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59440,6 +59440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelToLoad: WeaponShopScene
   exitPoint: House In
+  exitPosition: {x: 2.22, y: -2.88, z: 0}
 --- !u!61 &1698403557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59474,7 +59475,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698403555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.52, y: -1.22, z: -39.811546}
+  m_LocalPosition: {x: 14.52, y: -1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59512,6 +59513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelToLoad: DungeonScreen
   exitPoint: Dungeon In
+  exitPosition: {x: 0, y: 0, z: 0}
 --- !u!61 &1833488803
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59828,7 +59830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352567700af06c747a344e669769e09f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0}
+  startDirection: {x: 0, y: -1}
   pointName: Dungeon Out
 --- !u!4 &2120936721
 Transform:

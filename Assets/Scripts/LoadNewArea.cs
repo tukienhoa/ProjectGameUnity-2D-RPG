@@ -14,19 +14,21 @@ public class LoadNewArea : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        thePlayer = FindObjectOfType<PlayerController>();    
+        thePlayer = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.name == "Player") {
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Player")
+        {
             SceneManager.LoadScene(levelToLoad);
             thePlayer.startPoint = exitPoint;
-        }    
+        }
     }
 }
