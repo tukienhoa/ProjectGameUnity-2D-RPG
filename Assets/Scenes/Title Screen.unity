@@ -1501,7 +1501,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1061370111}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2084450001}
+        m_TargetAssemblyTypeName: TitleMenuController, Assembly-CSharp
+        m_MethodName: LoadArea
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1061370111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1838,7 +1850,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1900277806}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2084450001}
+        m_TargetAssemblyTypeName: TitleMenuController, Assembly-CSharp
+        m_MethodName: LoadArea
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1900277806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1928,7 +1952,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2084449999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e86a6c5bd8eb7634da4a74c898ecba3e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c21c2a173876e9498297b8f163ffa54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2140620855
