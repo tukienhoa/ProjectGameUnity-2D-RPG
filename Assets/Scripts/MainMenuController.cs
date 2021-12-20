@@ -5,18 +5,24 @@ using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 public class MainMenuController : MonoBehaviour
 {
+    // Inventory
+    public GameObject inventoryObj;
+
+    // Player Menu
+    public GameObject playerMenu;
+
     private PlayerController thePlayer;
 
     // Start is called before the first frame update
     void Start()
     {
-        thePlayer = FindObjectOfType<PlayerController>();
+        thePlayer = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void LoadArea()
@@ -40,14 +46,28 @@ public class MainMenuController : MonoBehaviour
             }
         }
 
-        if (name.Equals("Cancel"))
+        if (name.Equals("Cancel") || name.Equals("Back to Village"))
         {
-            SceneManager.LoadScene("VillageScreen");
-            if (thePlayer != null)
+            string sceneName = SceneManager.GetActiveScene().name;
+            if (sceneName.Equals("VillageScreen"))
             {
-                thePlayer.startPoint = "Teleport Cancel";
+                if (inventoryObj.activeSelf)
+                    inventoryObj.SetActive(false);
+
+                playerMenu.SetActive(!playerMenu.activeSelf);
             }
-            
+            else
+            {
+                SceneManager.LoadScene("VillageScreen");
+                if (thePlayer != null)
+                {
+                    thePlayer.startPoint = "Teleport Cancel";
+                }
+                if (inventoryObj.activeSelf)
+                    inventoryObj.SetActive(false);
+
+                playerMenu.SetActive(!playerMenu.activeSelf);
+            }
         }
     }
 

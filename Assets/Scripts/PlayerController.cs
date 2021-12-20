@@ -53,6 +53,9 @@ public class PlayerController : MonoBehaviour
 
     private Inventory playerInventory;
 
+    // Player Menu
+    public GameObject playerMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -187,7 +190,19 @@ public class PlayerController : MonoBehaviour
             // Toggle Inventory
             if (Input.GetKeyDown(KeyCode.B))
             {
+                if (playerMenu.activeSelf)
+                    playerMenu.SetActive(false);
+
                 inventoryObj.SetActive(!inventoryObj.activeSelf);
+            }
+
+            // Toggle player menu
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (inventoryObj.activeSelf)
+                    inventoryObj.SetActive(false);
+
+                playerMenu.SetActive(!playerMenu.activeSelf);
             }
 
             // Use HP Potion

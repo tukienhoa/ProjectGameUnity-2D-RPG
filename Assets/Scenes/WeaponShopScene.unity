@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352567700af06c747a344e669769e09f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0}
+  startDirection: {x: 0, y: 1}
   pointName: House In
 --- !u!4 &131694838
 Transform:
@@ -271,7 +271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131694836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.22, y: -2.88, z: -40.597145}
+  m_LocalPosition: {x: 2.22, y: -2.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -392,6 +392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelToLoad: VillageScreen
   exitPoint: House Out
+  exitPosition: {x: 14, y: -3, z: 0}
 --- !u!61 &943127957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -426,7 +427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943127955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.49, y: -4.5, z: -40.57737}
+  m_LocalPosition: {x: 2.49, y: -4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3305,6 +3306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelToLoad: VillageScreen
   exitPoint: House Secret Out
+  exitPosition: {x: 0, y: 0, z: 0}
 --- !u!61 &1070852633
 BoxCollider2D:
   m_ObjectHideFlags: 0
