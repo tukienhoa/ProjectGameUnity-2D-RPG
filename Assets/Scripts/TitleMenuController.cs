@@ -25,10 +25,10 @@ public class TitleMenuController : MonoBehaviour
         {
             SceneManager.LoadScene("VillageScreen");   
         }
+    }
 
-        if (name.Equals("Exit"))
-        {
-            Application.Quit();
-        }
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
