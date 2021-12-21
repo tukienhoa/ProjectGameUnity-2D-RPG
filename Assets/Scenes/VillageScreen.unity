@@ -50508,6 +50508,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1353506209, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
+      propertyPath: damageToGive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3660525215539453032, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
       propertyPath: m_Name
       value: Player
@@ -50798,6 +50802,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1514249669, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 313079024292052243, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

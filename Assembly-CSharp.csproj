@@ -44,9 +44,13 @@
      <Compile Include="Assets\Scripts\ChestController.cs" />
      <Compile Include="Assets\Scripts\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\TitleMenuController.cs" />
+     <Compile Include="Assets\Scripts\ItemSlot.cs" />
      <Compile Include="Assets\Scripts\Spell.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\EquippableItem.cs" />
      <Compile Include="Assets\Scripts\MainMenuController.cs" />
+     <Compile Include="Assets\Scripts\InventoryController.cs" />
+     <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\PlayerStartPoint.cs" />
      <Compile Include="Assets\Scripts\DialogHolder.cs" />
      <Compile Include="Assets\Scripts\HurtEnemy.cs" />
@@ -66,8 +70,11 @@
      <Compile Include="Assets\Scripts\PlayerMPManager.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\PlayerHealthManager.cs" />
+     <Compile Include="Assets\Scripts\EquipmentSlot.cs" />
      <Compile Include="Assets\Scripts\Bounds.cs" />
      <Compile Include="Assets\Scripts\EnemyHealthManager.cs" />
+     <Compile Include="Assets\Scripts\EquipmentPanel.cs" />
+     <Compile Include="Assets\Scripts\Character.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

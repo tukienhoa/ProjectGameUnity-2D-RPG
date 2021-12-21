@@ -57,4 +57,18 @@ public class PlayerHealthManager : MonoBehaviour
     {
         playerCurrentHealth = playerMaxHealth;
     }
+
+    public int GetMaxHealth()
+    {
+        return playerMaxHealth;
+    }
+
+    public void ChangeMaxHealth(int healthValue)
+    {
+        playerMaxHealth += healthValue;
+
+        // Handle when player unequips item -> decrease max health -> decrease current health if current health > new max health 
+        if (playerMaxHealth < playerCurrentHealth)
+            SetMaxHealth();
+    }
 }

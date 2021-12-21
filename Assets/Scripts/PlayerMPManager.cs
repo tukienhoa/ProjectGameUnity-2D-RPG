@@ -23,4 +23,17 @@ public class PlayerMPManager : MonoBehaviour
     {
         playerCurrentMP -= usedMP;
     }
+
+    public int GetMaxMP()
+    {
+        return playerMaxMP;
+    }
+
+    public void ChangeMaxMP(int manaValue)
+    {
+        playerMaxMP += manaValue;
+        // Handle when player unequips item -> decrease max MP -> decrease current MP if current MP > new max MP 
+        if (playerMaxMP < playerCurrentMP)
+            playerCurrentMP = playerMaxMP;
+    }
 }
