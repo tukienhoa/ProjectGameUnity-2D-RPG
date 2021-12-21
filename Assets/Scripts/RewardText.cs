@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class RewardText : MonoBehaviour
 {
 
-    public Text rewardText;
+    [SerializeField] TextMeshProUGUI rewardTMP;
 
     // Start is called before the first frame update
     void Start()
     {
-        rewardText = GetComponent<Text>();
+
     }
 
     // Update is called once per frame
@@ -22,6 +23,6 @@ public class RewardText : MonoBehaviour
 
     public void SetText(string textToDisplay)
     {
-        rewardText.text = textToDisplay;
+        rewardTMP.text = textToDisplay;
     }
 }

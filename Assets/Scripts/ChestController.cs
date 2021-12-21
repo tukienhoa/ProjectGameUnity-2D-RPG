@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ChestController : MonoBehaviour
 {
-    public int expReward;
+    [SerializeField] private int expReward;
+    [SerializeField] private int coinReward;
 
     private bool isOpened;
 
@@ -50,7 +51,18 @@ public class ChestController : MonoBehaviour
         audioSource.Play();
         anim.SetTrigger("isOpened");
 
-        dialogBox.GetComponent<RewardText>().SetText("Gained " + expReward + " EXP.");
+        if (coinReward == 0)
+        {
+            dialogBox.GetComponent<RewardText>().SetText("+ " + expReward + " EXP");
+        }
+        else if (expReward == 0)
+        {
+            dialogBox.GetComponent<RewardText>().SetText("+ " + coinReward + " COINS");
+        }
+        else
+        {
+            dialogBox.GetComponent<RewardText>().SetText("+ " + expReward + " EXP\n+ " + coinReward + " COINS");
+        }
 
         timerDisplay = displayTime;
         dialogBox.SetActive(true);
@@ -59,5 +71,15 @@ public class ChestController : MonoBehaviour
     public bool ChestOpened()
     {
         return isOpened;
+    }
+
+    public int GetExpReward()
+    {
+        return expReward;
+    }
+
+    public int GetCoinReward()
+    {
+        return coinReward;
     }
 }

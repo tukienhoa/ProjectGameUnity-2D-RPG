@@ -162,7 +162,8 @@ public class PlayerController : MonoBehaviour
                         if (!chest.ChestOpened())
                         {
                             chest.Open();
-                            thePS.AddExperience(chest.expReward);
+                            thePS.AddExperience(chest.GetExpReward());
+                            playerInventory.ChangeCoinValue(chest.GetCoinReward());
                         }
                     }
                 }

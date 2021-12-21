@@ -8,8 +8,13 @@ public class EnemyHealthManager : MonoBehaviour
     public int CurrentHealth;
 
     private PlayerStats thePlayerStats;
+    private Inventory thePlayerInventory;
 
-    public int expToGive;
+
+    [SerializeField]
+    private int expToGive;
+    [SerializeField]
+    private int coinToGive;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +22,7 @@ public class EnemyHealthManager : MonoBehaviour
         CurrentHealth = MaxHealth;
 
         thePlayerStats = FindObjectOfType<PlayerStats>();
+        thePlayerInventory = GameObject.Find("Player").GetComponent<Inventory>();
     }
 
     // Update is called once per frame
@@ -25,6 +31,7 @@ public class EnemyHealthManager : MonoBehaviour
         if (CurrentHealth <= 0)
         {
             thePlayerStats.AddExperience(expToGive);
+            thePlayerInventory.ChangeCoinValue(coinToGive);
 
             if (gameObject.GetComponent<EnemyController>() != null)
             {

@@ -691,6 +691,7 @@ MonoBehaviour:
   MaxHealth: 100
   CurrentHealth: 100
   expToGive: 50
+  coinToGive: 10
 --- !u!114 &109537206288295550
 MonoBehaviour:
   m_ObjectHideFlags: 0
