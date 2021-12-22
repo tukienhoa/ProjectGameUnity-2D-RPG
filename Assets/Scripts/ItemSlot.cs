@@ -3,9 +3,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class ItemSlot : MonoBehaviour, IPointerClickHandler
+public class ItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] Image image;
+    [SerializeField] ItemTooltip tooltip;
 
     public event Action<Item> OnRightClickEvent;
 
@@ -34,6 +35,11 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         {
             image = GetComponent<Image>();
         }
+
+        if (tooltip == null)
+        {
+            tooltip = FindObjectOfType<ItemTooltip>();
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -45,5 +51,18 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
                 OnRightClickEvent(item);
             }
         }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (item is EquippableItem)
+        {
+            tooltip.ShowTooltip((EquippableItem)item);
+        }
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        tooltip.HideTooltip();
     }
 }

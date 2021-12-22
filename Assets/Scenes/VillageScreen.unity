@@ -50802,10 +50802,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1514249669, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 313079024292052243, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -50830,10 +50826,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7107085128583967443, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
-      propertyPath: coinTMP
-      value: 
-      objectReference: {fileID: 2063051100}
     - target: {fileID: 7107085128583967448, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -59807,17 +59799,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c65f8b218409bf4eb9686fb734c81f0, type: 3}
---- !u!114 &2063051100 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2041954152793254584, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
-  m_PrefabInstance: {fileID: 1428006410}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2120936719
 GameObject:
   m_ObjectHideFlags: 0
