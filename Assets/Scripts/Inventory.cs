@@ -82,9 +82,19 @@ public class Inventory : MonoBehaviour
         return HPPotionStock;
     }
 
+    public void SetHPPotionStock(int stock)
+    {
+        HPPotionStock = stock;
+    }
+
     public int GetMPPotionStock()
     {
         return MPPotionStock;
+    }
+
+    public void SetMPPotionStock(int stock)
+    {
+        MPPotionStock = stock;
     }
 
     public void ChangeCoinValue(int value)

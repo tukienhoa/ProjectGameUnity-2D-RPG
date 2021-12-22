@@ -9,6 +9,10 @@ public class DialogHolder : MonoBehaviour
 
     public string[] dialogLines;
 
+    public GameObject weaponShop;
+
+    public bool isActive = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,26 +22,29 @@ public class DialogHolder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (isActive == false)
+            {
+                isActive = true;
+            }
+            else
+            {
+                isActive = false;
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other) {
         if (other.gameObject.name == "Player")
         {
-            if (Input.GetKey(KeyCode.F))
+            if (isActive == true)
             {
-                // dManager.ShowDialog(dialog);
-                if (!dManager.dialogActive)
-                {
-                    dManager.dialogLines = dialogLines;
-                    dManager.currentLine = 0;
-                    dManager.ShowDialog();
-                }
-
-                if (transform.parent.GetComponent<NPCMovement>() != null)
-                {
-                    transform.parent.GetComponent<NPCMovement>().canMove = false;
-                }
+                weaponShop.SetActive(true);
+            }
+            else
+            {
+                weaponShop.SetActive(false);
             }
         }
     }

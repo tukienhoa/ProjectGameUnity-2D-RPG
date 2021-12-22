@@ -50508,6 +50508,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1293891710, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
+      propertyPath: coin
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 1353506209, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
       propertyPath: damageToGive
       value: 0
@@ -50673,6 +50677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1379470081}
   - component: {fileID: 1379470080}
+  - component: {fileID: 1379470082}
   m_Layer: 0
   m_Name: BgMusic
   m_TagString: Untagged
@@ -50689,7 +50694,7 @@ AudioSource:
   m_GameObject: {fileID: 1379470079}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 72c6297cef2556e48b2119e2c69d9214, type: 2}
   m_audioClip: {fileID: 8300000, guid: 12b22e948d1a59843b59c1cb11cdfa0a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.6
@@ -50790,6 +50795,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1379470082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379470079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ca5288295d43a4397883ee56a57227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 72c6297cef2556e48b2119e2c69d9214, type: 2}
 --- !u!4 &1383180227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5691360324361594188, guid: 1c65f8b218409bf4eb9686fb734c81f0, type: 3}
@@ -50802,6 +50820,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 198711750, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198711750, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198711750, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198711750, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 313079024292052243, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
