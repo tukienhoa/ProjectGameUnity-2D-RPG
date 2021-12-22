@@ -285,6 +285,7 @@ MonoBehaviour:
   MaxHealth: 1000
   CurrentHealth: 1000
   expToGive: 50
+  coinToGive: 1000
 --- !u!95 &4751668363040967942
 Animator:
   serializedVersion: 3

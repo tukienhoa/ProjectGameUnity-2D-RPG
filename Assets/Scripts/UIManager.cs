@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
@@ -19,12 +20,16 @@ public class UIManager : MonoBehaviour
     // MP bar
     public Slider MPBar;
     public Text MPText;
+    private PlayerMPManager playerMP;
 
 
     // EXP bar
     public Slider expBar;
     public Text expText;
-    private PlayerMPManager playerMP;
+
+    // Coin
+    [SerializeField] TextMeshProUGUI coinTMP;
+    private Inventory playerInventory;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +45,7 @@ public class UIManager : MonoBehaviour
         }
         playerHealth = FindObjectOfType<PlayerHealthManager>();
         playerMP = FindObjectOfType<PlayerMPManager>();
+        playerInventory = FindObjectOfType<Inventory>();
         thePS = GetComponent<PlayerStats>();
     }
 
@@ -63,5 +69,8 @@ public class UIManager : MonoBehaviour
 
         // Level
         levelText.text = "Level: " + thePS.currentLevel;
+
+        // Coin
+        coinTMP.text = "" + playerInventory.GetCoin();
     }
 }

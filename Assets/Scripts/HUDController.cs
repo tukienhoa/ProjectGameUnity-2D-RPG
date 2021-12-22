@@ -6,8 +6,6 @@ using UnityEngine.EventSystems;
 
 public class HUDController : MonoBehaviour
 {
-    private static bool HUDExists;
-
     public GameObject inventoryObj;
 
     [SerializeField]
@@ -23,16 +21,6 @@ public class HUDController : MonoBehaviour
         playerInventory = FindObjectOfType<Inventory>();
         HPPotionStockText.text = "" + playerInventory.GetHPPotionStock();
         MPPotionStockText.text = "" + playerInventory.GetMPPotionStock();
-
-        if (!HUDExists)
-        {
-            HUDExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
 
     // Update is called once per frame

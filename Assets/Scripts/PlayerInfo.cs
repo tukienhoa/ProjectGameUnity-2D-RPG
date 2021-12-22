@@ -26,10 +26,10 @@ public class PlayerInfo : MonoBehaviour
     {
         textLevel.text = "Level " + PS.currentLevel;
         textExp.text = PS.currentExp + " / " + PS.toLevelUp[PS.currentLevel];
-        textHP.text = "" + PS.HPLevels[PS.currentLevel];
-        textMP.text = "" + PS.MPLevels[PS.currentLevel];
-        textDefence.text = "" + PS.defenceLevels[PS.currentLevel];
-        textAttack.text = "" + PS.attackLevels[PS.currentLevel];
-        textAP.text = "" + PS.APLevels[PS.currentLevel];
+        textHP.text = "" + PS.GetPlayerMaxHealth();
+        textMP.text = "" + PS.GetPlayerMaxMP();
+        textDefence.text = "" + PS.currentDefence;
+        textAttack.text = "" + PS.currentAttack;
+        textAP.text = "" + PS.currentAP;
     }
 }

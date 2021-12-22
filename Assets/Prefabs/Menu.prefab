@@ -342,7 +342,6 @@ GameObject:
   - component: {fileID: 8892639718914811189}
   - component: {fileID: 8892639718914811186}
   - component: {fileID: 8892639718914811187}
-  - component: {fileID: 8892639718914811191}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -432,18 +431,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8892639718914811191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8892639718914811184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9936209365acdaf4389747bb2ff471a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8892639719092389563
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,6 +885,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86a6c5bd8eb7634da4a74c898ecba3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryObj: {fileID: 0}
+  playerMenu: {fileID: 0}
 --- !u!1 &8892639719941849566
 GameObject:
   m_ObjectHideFlags: 0

@@ -76,4 +76,27 @@ public class PlayerStats : MonoBehaviour
             currentDefence = defenceLevels[currentLevel];
         }
     }
+
+
+
+    public int GetPlayerMaxHealth()
+    {
+        return thePlayerHealth.GetMaxHealth();
+    }
+
+    public void ChangePlayerMaxHealth(int healthValue)
+    {
+        thePlayerHealth.ChangeMaxHealth(healthValue);
+    }
+
+    public int GetPlayerMaxMP()
+    {
+        return thePlayerMP.GetMaxMP();
+    }
+
+    public void ChangePlayerMaxMP(int manaValue)
+    {
+        thePlayerMP.ChangeMaxMP(manaValue);
+    }
+
 }

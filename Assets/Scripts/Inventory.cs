@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    // HP + MP
     [SerializeField]
     private int HPPotionStock;
     [SerializeField]
@@ -14,6 +15,10 @@ public class Inventory : MonoBehaviour
 
     private PlayerHealthManager playerHealthManager;
     private PlayerMPManager playerMPManager;
+
+    // Coin
+    [SerializeField]
+    private int coin;
 
     // Start is called before the first frame update
     void Start()
@@ -77,8 +82,28 @@ public class Inventory : MonoBehaviour
         return HPPotionStock;
     }
 
+    public void SetHPPotionStock(int stock)
+    {
+        HPPotionStock = stock;
+    }
+
     public int GetMPPotionStock()
     {
         return MPPotionStock;
+    }
+
+    public void SetMPPotionStock(int stock)
+    {
+        MPPotionStock = stock;
+    }
+
+    public void ChangeCoinValue(int value)
+    {
+        coin += value;
+    }
+
+    public int GetCoin()
+    {
+        return coin;
     }
 }
