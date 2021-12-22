@@ -3,7 +3,9 @@ using UnityEngine;
 public enum EquipmentType
 {
     Weapon,
-    Armor
+    Armor,
+    Helmet,
+    Shoes
 }
 
 [CreateAssetMenu]

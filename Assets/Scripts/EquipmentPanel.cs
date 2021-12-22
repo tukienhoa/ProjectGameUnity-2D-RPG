@@ -8,11 +8,17 @@ public class EquipmentPanel : MonoBehaviour
 
     public event Action<Item> OnItemRightClickedEvent;
 
+    private PlayerStats thePS;
+    [SerializeField] DestroyItemDialog destroyItemDialog;
+
     public void Init()
     {
+        thePS = FindObjectOfType<PlayerStats>();
+
         for (int i = 0; i < equipmentSlots.Length; i++)
         {
             equipmentSlots[i].OnRightClickEvent += OnItemRightClickedEvent;
+            equipmentSlots[i].OnLeftClickEvent += DeleteItem;
         }
     }
 
@@ -48,5 +54,29 @@ public class EquipmentPanel : MonoBehaviour
         }
 
         return false;
+    }
+
+    private void DeleteItem(Item item)
+    {
+        destroyItemDialog.gameObject.SetActive(true);
+        destroyItemDialog.OnYesEvent += () => DestroyItemInSlot(item);
+
+    }
+
+    private void DestroyItemInSlot(Item item)
+    {
+        for (int i = 0; i < equipmentSlots.Length; i++)
+        {
+            if (equipmentSlots[i].item == item)
+            {
+                if (item is EquippableItem)
+                {
+                    EquippableItem equippableItem = (EquippableItem)item;
+                    equippableItem.Unequip(thePS);
+                    destroyItemDialog.gameObject.SetActive(false);
+                }
+                equipmentSlots[i].item = null;
+            }
+        }
     }
 }

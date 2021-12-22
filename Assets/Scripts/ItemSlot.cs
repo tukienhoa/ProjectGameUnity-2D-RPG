@@ -9,6 +9,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
     [SerializeField] ItemTooltip tooltip;
 
     public event Action<Item> OnRightClickEvent;
+    public event Action<Item> OnLeftClickEvent;
 
     private Item _item;
     public Item item
@@ -49,6 +50,15 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
             if (item != null && OnRightClickEvent != null)
             {
                 OnRightClickEvent(item);
+                tooltip.HideTooltip();
+            }
+        }
+
+        else if (eventData != null && eventData.button == PointerEventData.InputButton.Left)
+        {
+            if (item != null && OnLeftClickEvent != null)
+            {
+                OnLeftClickEvent(item);
             }
         }
     }

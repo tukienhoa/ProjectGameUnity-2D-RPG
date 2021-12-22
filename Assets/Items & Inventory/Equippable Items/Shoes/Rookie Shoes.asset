@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c9ae187f34111347b48f1b8cbff276e, type: 3}
-  m_Name: Sword
+  m_Name: Rookie Shoes
   m_EditorClassIdentifier: 
-  ItemName: Sword
-  Icon: {fileID: 6510515419312912815, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
+  ItemName: Rookie Shoes
+  Icon: {fileID: -3082089127865695880, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
   HPBonus: 0
   MPBonus: 0
   DEFBonus: 0
-  ATKBonus: 5
+  ATKBonus: 0
   APBonus: 2
-  equipmentType: 0
+  equipmentType: 3

@@ -9,6 +9,8 @@ public class InventoryController : MonoBehaviour
     [SerializeField] Transform itemsParent;
     [SerializeField] ItemSlot[] itemSlots;
 
+    [SerializeField] DestroyItemDialog destroyItemDialog;
+
     public event Action<Item> OnItemRightClickedEvent;
 
     public void Init()
@@ -16,6 +18,7 @@ public class InventoryController : MonoBehaviour
         for (int i = 0; i < itemSlots.Length; i++)
         {
             itemSlots[i].OnRightClickEvent += OnItemRightClickedEvent;
+            itemSlots[i].OnLeftClickEvent += DeleteItem;
         }
     }
 
@@ -69,5 +72,18 @@ public class InventoryController : MonoBehaviour
         }
 
         return false;
+    }
+
+    private void DeleteItem(Item item)
+    {
+        destroyItemDialog.gameObject.SetActive(true);
+        destroyItemDialog.OnYesEvent += () => DestroyItemInSlot(item);
+    }
+
+    private void DestroyItemInSlot(Item item)
+    {
+        items.Remove(item);
+        RefreshUI();
+        destroyItemDialog.gameObject.SetActive(false);
     }
 }
