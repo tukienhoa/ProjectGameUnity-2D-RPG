@@ -269,6 +269,9 @@ TextureImporter:
   - first:
       213: -4987446730266314146
     second: wolfbeast_57
+  - first:
+      213: -7576218249951245268
+    second: wolfbeast_89
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1685,9 +1688,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 336
-        y: 52
+        y: 104
         width: 48
-        height: 104
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2222,6 +2225,27 @@ TextureImporter:
       bones: []
       spriteID: e5afa4a9f9709cab0800000000000000
       internalID: -4987446730266314146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_89
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 52
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c03d664addbd690800000000000000
+      internalID: -7576218249951245268
       vertices: []
       indices: 
       edges: []
