@@ -9,6 +9,11 @@ public class ItemTooltip : MonoBehaviour
     [SerializeField] Text itemSlotText;
     [SerializeField] Text itemStatsText;
 
+    void Start()
+    {
+        gameObject.SetActive(false);
+    }
+
     private StringBuilder sb = new StringBuilder();
 
     public void ShowTooltip(EquippableItem item)

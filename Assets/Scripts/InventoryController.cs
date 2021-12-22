@@ -9,7 +9,7 @@ public class InventoryController : MonoBehaviour
     [SerializeField] Transform itemsParent;
     [SerializeField] ItemSlot[] itemSlots;
 
-    [SerializeField] DestroyItemDialog destroyItemDialog;
+    [SerializeField] QuestionDialog questionDialog;
 
     public event Action<Item> OnItemRightClickedEvent;
 
@@ -76,14 +76,15 @@ public class InventoryController : MonoBehaviour
 
     private void DeleteItem(Item item)
     {
-        destroyItemDialog.gameObject.SetActive(true);
-        destroyItemDialog.OnYesEvent += () => DestroyItemInSlot(item);
+        questionDialog.gameObject.SetActive(true);
+        questionDialog.text.text = "Are you sure to destroy this item?";
+        questionDialog.OnYesEvent += () => DestroyItemInSlot(item);
     }
 
     private void DestroyItemInSlot(Item item)
     {
         items.Remove(item);
         RefreshUI();
-        destroyItemDialog.gameObject.SetActive(false);
+        questionDialog.gameObject.SetActive(false);
     }
 }

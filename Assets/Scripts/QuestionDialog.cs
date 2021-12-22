@@ -1,10 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class DestroyItemDialog : MonoBehaviour
+public class QuestionDialog : MonoBehaviour
 {
     public event Action OnYesEvent;
     public event Action OnNoEvent;
+
+    public Text text;
 
     public void Hide()
     {
