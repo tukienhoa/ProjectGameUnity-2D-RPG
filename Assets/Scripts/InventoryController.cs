@@ -78,7 +78,10 @@ public class InventoryController : MonoBehaviour
     {
         questionDialog.gameObject.SetActive(true);
         questionDialog.text.text = "Are you sure to destroy this item?";
-        questionDialog.OnYesEvent += () => DestroyItemInSlot(item);
+        if (questionDialog.IsOnYesEventNull())
+        {
+            questionDialog.OnYesEvent += () => DestroyItemInSlot(item);
+        }
     }
 
     private void DestroyItemInSlot(Item item)

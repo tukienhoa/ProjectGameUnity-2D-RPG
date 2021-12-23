@@ -47,6 +47,8 @@ public class Character : MonoBehaviour
                 if (previousItem != null)
                 {
                     inventory.AddItem(previousItem);
+                    // Update player's stats and UI
+                    previousItem.Unequip(thePS);
                 }
 
                 // Update player's stats and UI

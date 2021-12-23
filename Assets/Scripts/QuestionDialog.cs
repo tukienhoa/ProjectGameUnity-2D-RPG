@@ -19,7 +19,9 @@ public class QuestionDialog : MonoBehaviour
         if (OnYesEvent != null)
         {
             OnYesEvent();
+            OnYesEvent = null;
         }
+
         gameObject.SetActive(false);
     }
 
@@ -29,6 +31,13 @@ public class QuestionDialog : MonoBehaviour
         {
             OnNoEvent();
         }
+
+        OnYesEvent = null;
         gameObject.SetActive(false);
+    }
+
+    public bool IsOnYesEventNull()
+    {
+        return OnYesEvent == null;
     }
 }

@@ -85,7 +85,5 @@ public class PlayerInfo : MonoBehaviour
             PS.ResetStatusPoints();
             questionDialog.gameObject.SetActive(false);
         }
-
-        questionDialog.OnYesEvent -= ResetAllStatusPoints;
     }
 }
