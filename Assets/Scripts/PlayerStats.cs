@@ -25,6 +25,14 @@ public class PlayerStats : MonoBehaviour
     private PlayerHealthManager thePlayerHealth;
     private PlayerMPManager thePlayerMP;
 
+    // Manage Status Points
+    private int statusPoints;
+    private int extraHP;
+    private int extraMP;
+    private int extraDEF;
+    private int extraATK;
+    private int extraAP;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +44,14 @@ public class PlayerStats : MonoBehaviour
 
         thePlayerHealth = FindObjectOfType<PlayerHealthManager>();
         thePlayerMP = FindObjectOfType<PlayerMPManager>();
+
+        // Manage Status Points and extra points
+        statusPoints = -1;
+        extraHP = 0;
+        extraMP = 0;
+        extraDEF = 0;
+        extraATK = 0;
+        extraAP = 0;
     }
 
     // Update is called once per frame
@@ -74,6 +90,8 @@ public class PlayerStats : MonoBehaviour
             currentAttack = attackLevels[currentLevel];
             currentAP = APLevels[currentLevel];
             currentDefence = defenceLevels[currentLevel];
+
+            statusPoints++;
         }
     }
 
@@ -97,6 +115,78 @@ public class PlayerStats : MonoBehaviour
     public void ChangePlayerMaxMP(int manaValue)
     {
         thePlayerMP.ChangeMaxMP(manaValue);
+    }
+
+    public int GetStatusPoints()
+    {
+        return statusPoints;
+    }
+
+    public void UseStatusPoints(string statToIncrease)
+    {
+        if (statusPoints != 0)
+        {
+            switch (statToIncrease)
+            {
+                case "HP":
+                    {
+                        extraHP++;
+                        thePlayerHealth.ChangeMaxHealth(1);
+                        statusPoints--;
+                        break;
+                    }
+                case "MP":
+                    {
+                        extraMP++;
+                        thePlayerMP.ChangeMaxMP(1);
+                        statusPoints--;
+                        break;
+                    }
+                case "DEF":
+                    {
+                        extraDEF++;
+                        currentDefence++;
+                        statusPoints--;
+                        break;
+                    }
+                case "ATK":
+                    {
+                        extraATK++;
+                        currentAttack++;
+                        statusPoints--;
+                        break;
+                    }
+                case "AP":
+                    {
+                        extraAP++;
+                        currentAP++;
+                        statusPoints--;
+                        break;
+                    }
+            }
+        }
+    }
+
+    public bool IsNoStatusPointUsed()
+    {
+        return extraHP == 0 && extraMP == 0 && extraDEF == 0 && extraATK == 0 && extraAP == 0;
+    }
+
+    public void ResetStatusPoints()
+    {
+        thePlayerHealth.ChangeMaxHealth(-extraHP);
+        thePlayerMP.ChangeMaxMP(-extraMP);
+        currentDefence -= extraDEF;
+        currentAttack -= extraATK;
+        currentAP -= extraAP;
+
+        extraHP = 0;
+        extraMP = 0;
+        extraDEF = 0;
+        extraATK = 0;
+        extraAP = 0;
+
+        statusPoints = currentLevel - 1;
     }
 
 }

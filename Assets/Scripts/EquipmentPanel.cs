@@ -9,7 +9,7 @@ public class EquipmentPanel : MonoBehaviour
     public event Action<Item> OnItemRightClickedEvent;
 
     private PlayerStats thePS;
-    [SerializeField] DestroyItemDialog destroyItemDialog;
+    [SerializeField] QuestionDialog questionDialog;
 
     public void Init()
     {
@@ -58,8 +58,12 @@ public class EquipmentPanel : MonoBehaviour
 
     private void DeleteItem(Item item)
     {
-        destroyItemDialog.gameObject.SetActive(true);
-        destroyItemDialog.OnYesEvent += () => DestroyItemInSlot(item);
+        questionDialog.gameObject.SetActive(true);
+        questionDialog.text.text = "Are you sure to destroy this item?";
+        if (questionDialog.IsOnYesEventNull())
+        {
+            questionDialog.OnYesEvent += () => DestroyItemInSlot(item);
+        }
 
     }
 
@@ -73,7 +77,7 @@ public class EquipmentPanel : MonoBehaviour
                 {
                     EquippableItem equippableItem = (EquippableItem)item;
                     equippableItem.Unequip(thePS);
-                    destroyItemDialog.gameObject.SetActive(false);
+                    questionDialog.gameObject.SetActive(false);
                 }
                 equipmentSlots[i].item = null;
             }
