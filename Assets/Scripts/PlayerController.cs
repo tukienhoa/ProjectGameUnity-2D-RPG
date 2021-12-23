@@ -152,7 +152,7 @@ public class PlayerController : MonoBehaviour
             // Open Chest
             if (Input.GetKeyDown(KeyCode.F))
             {
-                RaycastHit2D hit = Physics2D.Raycast(myRigidBody.position + Vector2.up * 0.2f, lastVelocity.normalized, 1.5f, LayerMask.GetMask("Chest"));
+                RaycastHit2D hit = Physics2D.Raycast(myRigidBody.position + Vector2.up * 0.2f, lastVelocity.normalized, 1.5f, LayerMask.GetMask("Chest", "Door"));
 
                 if (hit.collider != null)
                 {
@@ -164,6 +164,15 @@ public class PlayerController : MonoBehaviour
                             chest.Open();
                             thePS.AddExperience(chest.GetExpReward());
                             playerInventory.ChangeCoinValue(chest.GetCoinReward());
+                        }
+                    }
+
+                    DoorController door = hit.collider.GetComponent<DoorController>();
+                    if (door != null)
+                    {
+                        if (!door.DoorOpened())
+                        {
+                            door.Open();
                         }
                     }
                 }
