@@ -28,6 +28,16 @@ public class MainMenuController : MonoBehaviour
     public void LoadArea()
     {
         string name = EventSystem.current.currentSelectedGameObject.name;
+
+        if (name.Equals("Ruined Village"))
+        {
+            SceneManager.LoadScene("RuinedVillageScene");
+            if (thePlayer != null)
+            {
+                thePlayer.startPoint = "Ruined Village Start";
+            }
+        }
+
         if (name.Equals("Ice Mountain"))
         {
             SceneManager.LoadScene("IceMapScene");
@@ -43,6 +53,15 @@ public class MainMenuController : MonoBehaviour
             if (thePlayer != null)
             {
                 thePlayer.startPoint = "Volcano Start";
+            }
+        }
+
+        if (name.Equals("Castle"))
+        {
+            SceneManager.LoadScene("CastleScene");
+            if (thePlayer != null)
+            {
+                thePlayer.startPoint = "Castle Scene Start";
             }
         }
 
