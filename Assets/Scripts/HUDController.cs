@@ -42,7 +42,7 @@ public class HUDController : MonoBehaviour
         MPPotionStockText.text = "" + playerInventory.GetMPPotionStock();
     }
 
-    public void ClickButton()
+    public void TogglePlayerInventory()
     {
         string name = EventSystem.current.currentSelectedGameObject.name;
 

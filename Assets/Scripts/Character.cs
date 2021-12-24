@@ -7,6 +7,8 @@ public class Character : MonoBehaviour
 
     private PlayerStats thePS;
 
+    private static bool InventoryUIExists;
+
     private void Awake()
     {
         inventory.OnItemRightClickedEvent += EquipFromInventory;
@@ -17,6 +19,16 @@ public class Character : MonoBehaviour
 
     void Start()
     {
+        if (!InventoryUIExists)
+        {
+            InventoryUIExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         thePS = FindObjectOfType<PlayerStats>();
         gameObject.SetActive(false);
     }

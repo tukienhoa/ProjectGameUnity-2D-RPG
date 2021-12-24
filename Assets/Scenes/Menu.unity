@@ -801,7 +801,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!224 &1031501102
 RectTransform:
@@ -1888,5 +1888,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86a6c5bd8eb7634da4a74c898ecba3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryObj: {fileID: 0}
-  playerMenu: {fileID: 0}
+  inventoryObj: {fileID: 7398489789853069304, guid: e671ea1a6a836d64b9f41b2a3d03c8bc, type: 3}
+  playerMenu: {fileID: 8892639718914811184, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
