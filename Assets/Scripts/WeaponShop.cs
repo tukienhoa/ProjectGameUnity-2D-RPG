@@ -15,6 +15,9 @@ public class WeaponShop : MonoBehaviour
 
     public Text currencyNumber;
 
+    // List items
+    public List<Item> items;
+
     // Start is called before the first frame update
     void Start()
     {

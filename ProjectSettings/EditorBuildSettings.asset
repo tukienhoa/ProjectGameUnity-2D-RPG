@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LavaScene.unity
     guid: 0439d7696f0e0c749af3593e2f132c54
+  - enabled: 1
+    path: Assets/Scenes/CastleScene.unity
+    guid: ca835956d226cb54db03787372e3fc02
+  - enabled: 1
+    path: Assets/Scenes/RuinedVillageScene.unity
+    guid: f3dab3cd81c29c847a3ae1c7415121ed
   m_configObjects: {}
