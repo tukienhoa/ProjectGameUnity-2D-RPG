@@ -492,7 +492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &483589600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,9 +599,30 @@ MonoBehaviour:
     weaponID: 2
     weaponSprite: {fileID: 8770843898745299279, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
     weaponPrice: 10
+  - weaponName: Rookie Armor
+    weaponID: 3
+    weaponSprite: {fileID: 5594145062663716712, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
+    weaponPrice: 20
+  - weaponName: Rookie Helmet
+    weaponID: 4
+    weaponSprite: {fileID: 1251509516470864519, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
+    weaponPrice: 20
+  - weaponName: Rookie Shoes
+    weaponID: 5
+    weaponSprite: {fileID: -3082089127865695880, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
+    weaponPrice: 20
+  - weaponName: Rookie Sword
+    weaponID: 6
+    weaponSprite: {fileID: 6510515419312912815, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
+    weaponPrice: 20
   itemHolderPrefab: {fileID: 1898935649}
   grid: {fileID: 1556555848}
   currencyNumber: {fileID: 734614781}
+  items:
+  - {fileID: 11400000, guid: d1113e8e73004844e9e62d0aa9a35cd4, type: 2}
+  - {fileID: 11400000, guid: 470fa0161bd79894aad66c73cd69b879, type: 2}
+  - {fileID: 11400000, guid: d6eb67d0442788d4c9cc4195a5afd98c, type: 2}
+  - {fileID: 11400000, guid: 4e4c5d657836608469be646447de36f7, type: 2}
 --- !u!1 &558368353
 GameObject:
   m_ObjectHideFlags: 0
@@ -5544,7 +5565,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}

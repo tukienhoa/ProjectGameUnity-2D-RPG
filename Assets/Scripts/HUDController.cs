@@ -15,9 +15,21 @@ public class HUDController : MonoBehaviour
 
     private Inventory playerInventory;
 
+    private static bool HUDExists;
+
     // Start is called before the first frame update
     void Start()
     {
+        if (!HUDExists)
+        {
+            HUDExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         playerInventory = FindObjectOfType<Inventory>();
         HPPotionStockText.text = "" + playerInventory.GetHPPotionStock();
         MPPotionStockText.text = "" + playerInventory.GetMPPotionStock();
@@ -30,7 +42,7 @@ public class HUDController : MonoBehaviour
         MPPotionStockText.text = "" + playerInventory.GetMPPotionStock();
     }
 
-    public void ClickButton()
+    public void TogglePlayerInventory()
     {
         string name = EventSystem.current.currentSelectedGameObject.name;
 
