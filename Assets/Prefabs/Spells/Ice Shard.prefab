@@ -229,7 +229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a688ef302e45d34418d0eee8301e1918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToGive: 15
+  currentLevel: 0
+  damageByLevel: 000000000a0000000f00000014000000190000001e000000
   damageBurst: {fileID: 5415627598868688219, guid: 7261d6dbc4ad56040aa51340ebc75022, type: 3}
   hitPoint: {fileID: 4677234273549130803}
   damageNumber: {fileID: 3122932881163162569, guid: ea989f1de18917a489b26a48c6b1c743, type: 3}
