@@ -14,33 +14,80 @@ public class SpellSlot : MonoBehaviour
     [SerializeField] Text spellNameText;
     [SerializeField] Button spellButton;
 
+    [SerializeField] Text spellLevelText;
+    [SerializeField] Button upgradeButton;
+
     private SpellManager spellManager;
+
+    private PlayerStats PS;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        spellManager = GameObject.Find("Player").GetComponent<SpellManager>();
+
+        SIPController = spellInfoPanel.GetComponent<SpellInfoPanelController>();
+
         spell = spellObject.GetComponent<Spell>();
         spellNameText.text = spell.GetSpellName();
         spellButton.GetComponent<Image>().sprite = spell.spellSprite;
-        SIPController = spellInfoPanel.GetComponent<SpellInfoPanelController>();
 
-        spellManager = GameObject.Find("Player").GetComponent<SpellManager>();
+        PS = FindObjectOfType<PlayerStats>();
+
+        switch (spell.GetSpellName())
+        {
+            case "Ice Shard":
+                {
+                    spellLevelText.text = spellManager.iceShardLevel + " / " + (spell.damageByLevel.Length - 1);
+                    break;
+                }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    public void UpgradeSpell(string spellName)
-    {
-        switch (spellName)
+        switch (spell.GetSpellName())
         {
             case "Ice Shard":
                 {
-                    spellManager.iceShardLevel++;
+                    if ((spellManager.iceShardLevel == spell.damageByLevel.Length - 1) || PS.GetSkillPoints() == 0)
+                    {
+                        upgradeButton.gameObject.SetActive(false);
+                    }
+                    else
+                    {
+                        upgradeButton.gameObject.SetActive(true);
+                    }
+
+                    spellLevelText.text = spellManager.iceShardLevel + " / " + (spell.damageByLevel.Length - 1);
+
+                    break;
+                }
+        }
+
+
+    }
+
+    public void UpgradeSpell()
+    {
+        switch (spell.GetSpellName())
+        {
+            case "Ice Shard":
+                {
+                    if (spellManager.iceShardLevel < spell.damageByLevel.Length - 1)
+                    {
+                        spellManager.iceShardLevel++;
+                        PS.ChangeSkillPoints(-1);
+                        PS.ChangeUsedSkillPoints(1);
+
+                        // Update level text
+                        spellLevelText.text = spellManager.iceShardLevel + " / " + (spell.damageByLevel.Length - 1);
+
+                        // Update spell info panel
+                        SetSpellInfo();
+                    }
                     break;
                 }
         }
@@ -56,7 +103,7 @@ public class SpellSlot : MonoBehaviour
             case "Ice Shard":
                 {
                     SIPController.descriptionText.text = "Cast an ice shard that deals " + spell.damageByLevel[spellManager.iceShardLevel] + " damage to an enemy.";
-                    SIPController.levelText.text = spellManager.iceShardLevel + " / " + spell.damageByLevel.Length;
+                    SIPController.levelText.text = spellManager.iceShardLevel + " / " + (spell.damageByLevel.Length - 1);
                     break;
                 }
         }

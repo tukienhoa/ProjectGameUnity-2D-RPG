@@ -33,6 +33,12 @@ public class PlayerStats : MonoBehaviour
     private int extraATK;
     private int extraAP;
 
+    // Manage Skill Points
+    private int skillPoints;
+    private int usedSkillPoints;
+
+    private SpellManager spellManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +50,7 @@ public class PlayerStats : MonoBehaviour
 
         thePlayerHealth = FindObjectOfType<PlayerHealthManager>();
         thePlayerMP = FindObjectOfType<PlayerMPManager>();
+        spellManager = GameObject.Find("Player").GetComponent<SpellManager>();
 
         // Manage Status Points and extra points
         statusPoints = -1;
@@ -52,6 +59,10 @@ public class PlayerStats : MonoBehaviour
         extraDEF = 0;
         extraATK = 0;
         extraAP = 0;
+
+        // Manage Skill Points
+        skillPoints = -1;
+        usedSkillPoints = 0;
     }
 
     // Update is called once per frame
@@ -92,6 +103,7 @@ public class PlayerStats : MonoBehaviour
             currentDefence = defenceLevels[currentLevel];
 
             statusPoints++;
+            skillPoints++;
         }
     }
 
@@ -189,4 +201,34 @@ public class PlayerStats : MonoBehaviour
         statusPoints = currentLevel - 1;
     }
 
+    // Manage Skill Points
+    public void ChangeSkillPoints(int value)
+    {
+        skillPoints += value;
+    }
+
+    public int GetSkillPoints()
+    {
+        return skillPoints;
+    }
+
+    public void ChangeUsedSkillPoints(int value)
+    {
+        usedSkillPoints += value;
+    }
+
+    public int GetUsedSkillPoints()
+    {
+        return usedSkillPoints;
+    }
+
+    public void ResetSkillPoints()
+    {
+        // Reset spells' level
+        spellManager.iceShardLevel = 1;
+
+        // Reset skill points
+        skillPoints += usedSkillPoints;
+        usedSkillPoints = 0;
+    }
 }

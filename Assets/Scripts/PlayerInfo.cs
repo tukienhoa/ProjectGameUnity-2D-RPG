@@ -77,13 +77,11 @@ public class PlayerInfo : MonoBehaviour
         {
             messageDialog.text.text = "Not enough coins.";
             messageDialog.gameObject.SetActive(true);
-            questionDialog.gameObject.SetActive(false);
         }
         else
         {
             playerInventory.ChangeCoinValue(-500);
             PS.ResetStatusPoints();
-            questionDialog.gameObject.SetActive(false);
         }
     }
 }
