@@ -22,19 +22,21 @@ public class EnemyToUnlock : MonoBehaviour
     private void OnDestroy()
     {
         Debug.Log("Boss killed.");
-        // switch (SceneManager.GetActiveScene().name)
-        // {
-        //     case "IceMapScene":
-        //     PlayerPrefs.SetInt("Map Progress", 1);
-        //     break;
 
-        //     case "LavaScene":
-        //     PlayerPrefs.SetInt("Map Progress", 2);
-        //     break;
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "IceMapScene":
+            PlayerPrefs.SetInt("Map Progress", 1);
+            break;
 
-        //     case "CastleScene":
-        //     PlayerPrefs.SetInt("Map Progress", 3);
-        // }
+            case "LavaScene":
+            PlayerPrefs.SetInt("Map Progress", 2);
+            break;
+
+            case "CastleScene":
+            PlayerPrefs.SetInt("Map Progress", 3);
+            break;
+        }
 
         SceneManager.LoadScene("VillageScreen");
         if (thePlayer != null)
