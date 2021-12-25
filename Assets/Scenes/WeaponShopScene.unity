@@ -599,22 +599,6 @@ MonoBehaviour:
     weaponID: 2
     weaponSprite: {fileID: 8770843898745299279, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
     weaponPrice: 10
-  - weaponName: Rookie Armor
-    weaponID: 3
-    weaponSprite: {fileID: 5594145062663716712, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
-    weaponPrice: 20
-  - weaponName: Rookie Helmet
-    weaponID: 4
-    weaponSprite: {fileID: 1251509516470864519, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
-    weaponPrice: 20
-  - weaponName: Rookie Shoes
-    weaponID: 5
-    weaponSprite: {fileID: -3082089127865695880, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
-    weaponPrice: 20
-  - weaponName: Rookie Sword
-    weaponID: 6
-    weaponSprite: {fileID: 6510515419312912815, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
-    weaponPrice: 20
   itemHolderPrefab: {fileID: 1898935649}
   grid: {fileID: 1556555848}
   currencyNumber: {fileID: 734614781}
@@ -5908,6 +5892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemHolder
       objectReference: {fileID: 0}
+    - target: {fileID: 4963078783061840076, guid: db4c8bfd5583f3f489d4d79817613c27, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4963078783061840079, guid: db4c8bfd5583f3f489d4d79817613c27, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5942,7 +5930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4963078783061840079, guid: db4c8bfd5583f3f489d4d79817613c27, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 120.2409
+      value: 216.77
       objectReference: {fileID: 0}
     - target: {fileID: 4963078783061840079, guid: db4c8bfd5583f3f489d4d79817613c27, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5978,7 +5966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4963078783061840079, guid: db4c8bfd5583f3f489d4d79817613c27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -60.12045
+      value: -108.385
       objectReference: {fileID: 0}
     - target: {fileID: 4963078783061840079, guid: db4c8bfd5583f3f489d4d79817613c27, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

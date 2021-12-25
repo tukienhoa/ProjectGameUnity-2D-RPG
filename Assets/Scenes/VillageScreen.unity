@@ -50948,6 +50948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1932f7e3a3bc549419f4e09a2fd587c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iceShardLevel: 0
 --- !u!114 &1293891713 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3660525215539453037, guid: 6504dd450aaa413488d1221b404634b6, type: 3}

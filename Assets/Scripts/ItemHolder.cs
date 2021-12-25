@@ -8,6 +8,7 @@ public class ItemHolder : MonoBehaviour
     public int itemID;
     public Text itemName;
     public Text itemPrice;
+    public Text itemStats;
     public Image itemImage;
     public GameObject buyButton;
 }
