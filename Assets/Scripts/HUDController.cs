@@ -6,7 +6,6 @@ using UnityEngine.EventSystems;
 
 public class HUDController : MonoBehaviour
 {
-    public GameObject inventoryObj;
 
     [SerializeField]
     private Text HPPotionStockText;
@@ -40,15 +39,5 @@ public class HUDController : MonoBehaviour
     {
         HPPotionStockText.text = "" + playerInventory.GetHPPotionStock();
         MPPotionStockText.text = "" + playerInventory.GetMPPotionStock();
-    }
-
-    public void TogglePlayerInventory()
-    {
-        string name = EventSystem.current.currentSelectedGameObject.name;
-
-        if (name.Equals("InventoryBtn"))
-        {
-            inventoryObj.SetActive(!inventoryObj.activeSelf);
-        }
     }
 }

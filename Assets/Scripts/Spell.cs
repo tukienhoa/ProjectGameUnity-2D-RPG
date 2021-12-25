@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Spell : MonoBehaviour
 {
-    public int damageToGive;
+    [SerializeField] int currentLevel;
+    [SerializeField] int[] damageByLevel;
     private int currentDamage;
     public GameObject damageBurst;
     public Transform hitPoint;
@@ -31,6 +32,8 @@ public class Spell : MonoBehaviour
         anim = GetComponent<Animator>();
         playerMPManager = FindObjectOfType<PlayerMPManager>();
         audioSource = GetComponent<AudioSource>();
+
+        currentLevel = 1;
     }
 
     // Start is called before the first frame update
@@ -56,7 +59,7 @@ public class Spell : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            currentDamage = damageToGive + thePS.currentAP;
+            currentDamage = damageByLevel[currentLevel] + thePS.currentAP;
 
             other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(currentDamage);
 
@@ -80,5 +83,10 @@ public class Spell : MonoBehaviour
         anim.SetFloat("MoveY", direction.y);
         rb.AddForce(direction * force);
         playerMPManager.ConsumeMP(MPCost);
+    }
+
+    public void UpgradeSpell()
+    {
+        currentLevel++;
     }
 }

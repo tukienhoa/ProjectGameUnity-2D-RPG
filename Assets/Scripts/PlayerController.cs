@@ -53,6 +53,9 @@ public class PlayerController : MonoBehaviour
 
     private Inventory playerInventory;
 
+    // Spell controller
+    public GameObject spellController;
+
     // Player Menu
     public GameObject playerMenu;
 
@@ -200,19 +203,20 @@ public class PlayerController : MonoBehaviour
             // Toggle Inventory
             if (Input.GetKeyDown(KeyCode.B))
             {
-                if (playerMenu.activeSelf)
-                    playerMenu.SetActive(false);
-
-                inventoryObj.SetActive(!inventoryObj.activeSelf);
+                ToggleInventory();
             }
+
+            // Toggle Spell Controller
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                ToggleSpellController();
+            }
+
 
             // Toggle player menu
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                if (inventoryObj.activeSelf)
-                    inventoryObj.SetActive(false);
-
-                playerMenu.SetActive(!playerMenu.activeSelf);
+                TogglePlayerMenu();
             }
 
             // Use HP Potion
@@ -275,5 +279,35 @@ public class PlayerController : MonoBehaviour
         GameObject spellObject = Instantiate(spellPrefabs[spellNumber], transform.position, Quaternion.identity);
         Spell spell = spellObject.GetComponent<Spell>();
         spell.Cast(lastVelocity, 50);
+    }
+
+    public void ToggleInventory()
+    {
+        if (playerMenu.activeSelf)
+            playerMenu.SetActive(false);
+        if (spellController.activeSelf)
+            spellController.SetActive(false);
+
+        inventoryObj.SetActive(!inventoryObj.activeSelf);
+    }
+
+    public void ToggleSpellController()
+    {
+        if (playerMenu.activeSelf)
+            playerMenu.SetActive(false);
+        if (inventoryObj.activeSelf)
+            inventoryObj.SetActive(false);
+
+        spellController.SetActive(!spellController.activeSelf);
+    }
+
+    public void TogglePlayerMenu()
+    {
+        if (inventoryObj.activeSelf)
+            inventoryObj.SetActive(false);
+        if (spellController.activeSelf)
+            spellController.SetActive(false);
+
+        playerMenu.SetActive(!playerMenu.activeSelf);
     }
 }
