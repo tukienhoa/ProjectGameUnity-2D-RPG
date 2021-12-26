@@ -45,6 +45,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Button spell1Btn;
 
+    private float spell2CD;
+    private float spell2CDTimer = 0.0f;
+
+    [SerializeField]
+    private Button spell2Btn;
+
     [SerializeField]
     private GameObject[] spellPrefabs;
 
@@ -69,6 +75,7 @@ public class PlayerController : MonoBehaviour
         playerInventory = GetComponent<Inventory>();
 
         spell1CD = spellPrefabs[0].GetComponent<Spell>().CD;
+        spell2CD = spellPrefabs[1].GetComponent<Spell>().CD;
 
         if (!playerExists)
         {
@@ -200,6 +207,25 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
+            // Cast spell 2
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (GetComponent<PlayerMPManager>().playerCurrentMP >= spellPrefabs[1].GetComponent<Spell>().MPCost)
+                {
+
+                    if (spell2CDTimer <= 0.0f)
+                    {
+                        castingSpell = true;
+                        myRigidBody.velocity = Vector2.zero;
+                        anim.SetBool("Spell", true);
+                        CastSpell(1);
+                        castSpellTimeCounter = castSpellTime;
+                        spell2CDTimer = spell2CD;
+                        spell2Btn.GetComponent<SpellCooldown>().UseSpell();
+                    }
+                }
+            }
+
             // Toggle Inventory
             if (Input.GetKeyDown(KeyCode.B))
             {
@@ -255,6 +281,11 @@ public class PlayerController : MonoBehaviour
         if (spell1CDTimer > 0)
         {
             spell1CDTimer -= Time.deltaTime;
+        }
+
+        if (spell2CDTimer > 0)
+        {
+            spell2CDTimer -= Time.deltaTime;
         }
 
         anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));

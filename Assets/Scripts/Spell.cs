@@ -64,7 +64,19 @@ public class Spell : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            currentDamage = damageByLevel[spellManager.iceShardLevel] + thePS.currentAP;
+            switch (spellName)
+            {
+                case "Ice Shard":
+                    {
+                        currentDamage = damageByLevel[spellManager.iceShardLevel] + thePS.currentAP;
+                        break;
+                    }
+                case "Wind Breath":
+                    {
+                        currentDamage = damageByLevel[spellManager.windBreathLevel] + thePS.currentAP;
+                        break;
+                    }
+            }
 
             other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(currentDamage);
 

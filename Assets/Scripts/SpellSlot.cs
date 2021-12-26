@@ -42,6 +42,11 @@ public class SpellSlot : MonoBehaviour
                     spellLevelText.text = spellManager.iceShardLevel + " / " + (spell.damageByLevel.Length - 1);
                     break;
                 }
+            case "Wind Breath":
+                {
+                    spellLevelText.text = spellManager.windBreathLevel + " / " + (spell.damageByLevel.Length - 1);
+                    break;
+                }
         }
     }
 
@@ -62,6 +67,21 @@ public class SpellSlot : MonoBehaviour
                     }
 
                     spellLevelText.text = spellManager.iceShardLevel + " / " + (spell.damageByLevel.Length - 1);
+
+                    break;
+                }
+            case "Wind Breath":
+                {
+                    if ((spellManager.windBreathLevel == spell.damageByLevel.Length - 1) || PS.GetSkillPoints() == 0)
+                    {
+                        upgradeButton.gameObject.SetActive(false);
+                    }
+                    else
+                    {
+                        upgradeButton.gameObject.SetActive(true);
+                    }
+
+                    spellLevelText.text = spellManager.windBreathLevel + " / " + (spell.damageByLevel.Length - 1);
 
                     break;
                 }
@@ -90,6 +110,22 @@ public class SpellSlot : MonoBehaviour
                     }
                     break;
                 }
+            case "Wind Breath":
+                {
+                    if (spellManager.windBreathLevel < spell.damageByLevel.Length - 1)
+                    {
+                        spellManager.windBreathLevel++;
+                        PS.ChangeSkillPoints(-1);
+                        PS.ChangeUsedSkillPoints(1);
+
+                        // Update level text
+                        spellLevelText.text = spellManager.windBreathLevel + " / " + (spell.damageByLevel.Length - 1);
+
+                        // Update spell info panel
+                        SetSpellInfo();
+                    }
+                    break;
+                }
         }
     }
 
@@ -104,6 +140,12 @@ public class SpellSlot : MonoBehaviour
                 {
                     SIPController.descriptionText.text = "Cast an ice shard that deals " + spell.damageByLevel[spellManager.iceShardLevel] + " damage to an enemy.";
                     SIPController.levelText.text = spellManager.iceShardLevel + " / " + (spell.damageByLevel.Length - 1);
+                    break;
+                }
+            case "Wind Breath":
+                {
+                    SIPController.descriptionText.text = "Make a wind slash that deals " + spell.damageByLevel[spellManager.windBreathLevel] + " damage to an enemy.";
+                    SIPController.levelText.text = spellManager.windBreathLevel + " / " + (spell.damageByLevel.Length - 1);
                     break;
                 }
         }

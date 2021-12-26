@@ -226,6 +226,7 @@ public class PlayerStats : MonoBehaviour
     {
         // Reset spells' level
         spellManager.iceShardLevel = 1;
+        spellManager.windBreathLevel = 1;
 
         // Reset skill points
         skillPoints += usedSkillPoints;

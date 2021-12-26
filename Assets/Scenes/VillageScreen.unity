@@ -4849,8 +4849,23 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 9162353475250223596, guid: 1aa9b9a46c3f7c548869f3dfbf353456, type: 3}
+      propertyPath: m_Text
+      value: E
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1aa9b9a46c3f7c548869f3dfbf353456, type: 3}
+--- !u!114 &596820572 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2638123309279070826, guid: 1aa9b9a46c3f7c548869f3dfbf353456, type: 3}
+  m_PrefabInstance: {fileID: 596820571}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &700796691 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1846409675657709122, guid: 57b13643192e56b48b6686c88e26bb2f, type: 3}
@@ -50874,6 +50889,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1111986537}
     - target: {fileID: 3660525215539453037, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
+      propertyPath: spell2Btn
+      value: 
+      objectReference: {fileID: 596820572}
+    - target: {fileID: 3660525215539453037, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
       propertyPath: playerMenu
       value: 
       objectReference: {fileID: 832179805}
@@ -50885,6 +50904,10 @@ PrefabInstance:
       propertyPath: spellController
       value: 
       objectReference: {fileID: 700796691}
+    - target: {fileID: 3660525215539453037, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
+      propertyPath: spellPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 1963454684481867657, guid: 3a60eaa204a453241ad328c4791dfab4, type: 3}
     - target: {fileID: 3660525215539453038, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
       propertyPath: m_RootOrder
       value: 1
