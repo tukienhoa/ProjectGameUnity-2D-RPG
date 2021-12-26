@@ -14,19 +14,38 @@ public class SettingMenuController : MonoBehaviour
 
     // Resolutions
     public Dropdown resolutionDropdown;
+
+    // full screen toggle
+    public Toggle fullScreenToggle;
+
     Resolution[] resolutions;
 
     // Start is called before the first frame update
     void Start()
     {
         // full screen and resolution
-        if (PlayerPrefs.GetInt("fullscreen") == 0)
+        if (!PlayerPrefs.HasKey("resolution width"))
         {
-            Screen.SetResolution(PlayerPrefs.GetInt("resolution width"), PlayerPrefs.GetInt("resolution height"), false);
+            PlayerPrefs.SetInt("resolution width", Screen.currentResolution.width);
+            PlayerPrefs.SetInt("resolution height", Screen.currentResolution.height);
+        }
+
+        if (PlayerPrefs.HasKey("fullscreen"))
+        {
+            if (PlayerPrefs.GetInt("fullscreen") == 0)
+            {
+                Screen.SetResolution(PlayerPrefs.GetInt("resolution width"), PlayerPrefs.GetInt("resolution height"), false);
+                fullScreenToggle.isOn = false;
+            }
+            else
+            {
+                Screen.SetResolution(PlayerPrefs.GetInt("resolution width"), PlayerPrefs.GetInt("resolution height"), true);
+                fullScreenToggle.isOn = true;
+            }
         }
         else
         {
-            Screen.SetResolution(PlayerPrefs.GetInt("resolution width"), PlayerPrefs.GetInt("resolution height"), true);
+            fullScreenToggle.isOn = false;
         }
 
         if (PlayerPrefs.HasKey("bgVolume"))
@@ -46,8 +65,8 @@ public class SettingMenuController : MonoBehaviour
             string option = resolutions[i].width + " x " + resolutions[i].height;
             options.Add(option);
 
-            if (resolutions[i].width == Screen.currentResolution.width && 
-                resolutions[i].height == Screen.currentResolution.height)
+            if (resolutions[i].width == PlayerPrefs.GetInt("resolution width") && 
+                resolutions[i].height == PlayerPrefs.GetInt("resolution height"))
             {
                 currentResolutionIndex = i;
             }
