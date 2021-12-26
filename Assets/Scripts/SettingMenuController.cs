@@ -19,6 +19,16 @@ public class SettingMenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // full screen and resolution
+        if (PlayerPrefs.GetInt("fullscreen") == 0)
+        {
+            Screen.SetResolution(PlayerPrefs.GetInt("resolution width"), PlayerPrefs.GetInt("resolution height"), false);
+        }
+        else
+        {
+            Screen.SetResolution(PlayerPrefs.GetInt("resolution width"), PlayerPrefs.GetInt("resolution height"), true);
+        }
+
         if (PlayerPrefs.HasKey("bgVolume"))
         {
             audioMixer.SetFloat("volume", PlayerPrefs.GetFloat("bgVolume"));
@@ -63,11 +73,21 @@ public class SettingMenuController : MonoBehaviour
     public void SetFullScreen(bool isFullScreen)
     {
         Screen.fullScreen = isFullScreen;
+        if (isFullScreen == true)
+        {
+            PlayerPrefs.SetInt("fullscreen", 1);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("fullscreen", 0);
+        }
     }
 
     public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        PlayerPrefs.SetInt("resolution width", resolution.width);
+        PlayerPrefs.SetInt("resolution height", resolution.height);
     }
 }
