@@ -89,6 +89,16 @@ public class PlayerController : MonoBehaviour
 
         canMove = true;
         lastMove = new Vector2(0, -1f);
+
+        // Load player's position
+        if (MyGameManager.Instance.isNewGame == false)
+        {
+            if (PlayerPrefs.HasKey("PosX"))
+            {
+                transform.position = new Vector2(PlayerPrefs.GetFloat("PosX"), PlayerPrefs.GetFloat("PosY"));
+                lastMove = new Vector2(PlayerPrefs.GetFloat("LastMoveX"), PlayerPrefs.GetFloat("LastMoveY"));
+            }
+        }
     }
 
     // Update is called once per frame
@@ -340,5 +350,14 @@ public class PlayerController : MonoBehaviour
             spellController.SetActive(false);
 
         playerMenu.SetActive(!playerMenu.activeSelf);
+
+        if (playerMenu.activeSelf)
+        {
+            MyGameManager.Instance.PauseGame();
+        }
+        if (!playerMenu.activeSelf)
+        {
+            MyGameManager.Instance.ResumeGame();
+        }
     }
 }

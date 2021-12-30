@@ -13,6 +13,8 @@ public class MainMenuController : MonoBehaviour
     public GameObject playerMenu;
 
     private PlayerController thePlayer;
+    private PlayerStats thePS;
+    private Inventory playerInventory;
 
     private int mapProgress;
 
@@ -23,21 +25,23 @@ public class MainMenuController : MonoBehaviour
         foreach (Image item in locks)
         {
             if (item.name == "Lock_Volcano" || item.name == "Lock_Castle")
-                {
-                    item.gameObject.SetActive(false);
-                }
+            {
+                item.gameObject.SetActive(false);
+            }
         }
 
         if (PlayerPrefs.HasKey("Map Progress"))
         {
             mapProgress = PlayerPrefs.GetInt("Map Progress");
         }
-        else 
+        else
         {
             mapProgress = 0;
         }
 
         thePlayer = GameObject.Find("Player").GetComponent<PlayerController>();
+        thePS = FindObjectOfType<PlayerStats>();
+        playerInventory = GameObject.Find("Player").GetComponent<Inventory>();
 
         Button[] buttons = this.GetComponentsInChildren<Button>();
         if (mapProgress < 1)
@@ -49,7 +53,7 @@ public class MainMenuController : MonoBehaviour
                     buttons[i].interactable = false;
                 }
             }
-            
+
             foreach (Image item in locks)
             {
                 if (item.name == "Lock_Volcano" || item.name == "Lock_Castle")
@@ -120,7 +124,7 @@ public class MainMenuController : MonoBehaviour
                 }
             }
             else Debug.Log("Scene locked. Complete Ice Mountain Scene to unlock this scene.");
-            
+
         }
 
         if (name.Equals("Castle"))
@@ -157,8 +161,14 @@ public class MainMenuController : MonoBehaviour
                     inventoryObj.SetActive(false);
 
                 playerMenu.SetActive(!playerMenu.activeSelf);
+                MyGameManager.Instance.ResumeGame();
             }
         }
+    }
+
+    public void SaveGame()
+    {
+        MyGameManager.Instance.SaveGame(thePlayer, thePS, playerInventory);
     }
 
     public void ExitGame()
