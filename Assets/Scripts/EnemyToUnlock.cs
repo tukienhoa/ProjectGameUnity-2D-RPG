@@ -7,10 +7,13 @@ public class EnemyToUnlock : MonoBehaviour
 {
     private PlayerController thePlayer;
 
+    private GameObject dialog;
+
     // Start is called before the first frame update
     void Start()
     {
         thePlayer = GameObject.Find("Player").GetComponent<PlayerController>();
+        dialog = GameObject.Find("Canvas").transform.Find("BossKilledDialog").gameObject;
     }
 
     // Update is called once per frame
@@ -21,27 +24,27 @@ public class EnemyToUnlock : MonoBehaviour
 
     private void OnDestroy()
     {
-        Debug.Log("Boss killed.");
-
-        switch (SceneManager.GetActiveScene().name)
+        if (gameObject.GetComponent<EnemyHealthManager>().CurrentHealth <= 0)
         {
-            case "IceMapScene":
-            PlayerPrefs.SetInt("Map Progress", 1);
-            break;
+            Debug.Log("Boss killed.");
 
-            case "LavaScene":
-            PlayerPrefs.SetInt("Map Progress", 2);
-            break;
+            switch (SceneManager.GetActiveScene().name)
+            {
+                case "IceMapScene":
+                PlayerPrefs.SetInt("Map Progress", 1);
+                break;
 
-            case "CastleScene":
-            PlayerPrefs.SetInt("Map Progress", 3);
-            break;
-        }
+                case "LavaScene":
+                PlayerPrefs.SetInt("Map Progress", 2);
+                break;
 
-        SceneManager.LoadScene("VillageScreen");
-        if (thePlayer != null)
-        {
-            thePlayer.startPoint = "Teleport Cancel";
+                case "CastleScene":
+                PlayerPrefs.SetInt("Map Progress", 3);
+                break;
+            }
+
+            dialog.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }

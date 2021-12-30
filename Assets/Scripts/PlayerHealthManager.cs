@@ -13,11 +13,14 @@ public class PlayerHealthManager : MonoBehaviour
 
     private SFXManager sfxMan;
 
+    private GameObject playerDeadDialog;
+
     // Start is called before the first frame update
     void Start()
     {
         playerCurrentHealth = playerMaxHealth;
         sfxMan = FindObjectOfType<SFXManager>();
+        playerDeadDialog = GameObject.Find("Canvas").transform.Find("PlayerDeadDialog").gameObject;
     }
 
     // Update is called once per frame
@@ -27,6 +30,7 @@ public class PlayerHealthManager : MonoBehaviour
         {
             gameObject.SetActive(false);
             sfxMan.playerDead.Play();
+            playerDeadDialog.SetActive(true);
         }
 
     }
@@ -42,12 +46,14 @@ public class PlayerHealthManager : MonoBehaviour
         }
     }
 
-
-
     public void HurtPlayer(int damageToGive)
     {
         playerCurrentHealth -= damageToGive;
-
+        if (playerCurrentHealth < 0)
+        {
+            playerCurrentHealth = 0;
+        }
+        
         // Flash effect when player gets hit by enemy
         StartCoroutine("HurtColor");
         sfxMan.playerHurt.Play();
