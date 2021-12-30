@@ -16,7 +16,13 @@ public class MainMenuController : MonoBehaviour
     private PlayerStats thePS;
     private Inventory playerInventory;
 
+    // Items
+    public GameObject itemsInventory;
+    public GameObject equipmentPanel;
+
     private int mapProgress;
+
+    [SerializeField] Button saveButton;
 
     // Start is called before the first frame update
     void Start()
@@ -88,7 +94,14 @@ public class MainMenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (SceneManager.GetActiveScene().name.Equals("VillageScreen"))
+        {
+            saveButton.gameObject.SetActive(true);
+        }
+        if (!SceneManager.GetActiveScene().name.Equals("VillageScreen"))
+        {
+            saveButton.gameObject.SetActive(false);
+        }
     }
 
     public void LoadArea()
@@ -149,6 +162,7 @@ public class MainMenuController : MonoBehaviour
                     inventoryObj.SetActive(false);
 
                 playerMenu.SetActive(!playerMenu.activeSelf);
+                MyGameManager.Instance.ResumeGame();
             }
             else
             {
@@ -168,7 +182,7 @@ public class MainMenuController : MonoBehaviour
 
     public void SaveGame()
     {
-        MyGameManager.Instance.SaveGame(thePlayer, thePS, playerInventory);
+        MyGameManager.Instance.SaveGame(thePlayer, thePS, playerInventory, itemsInventory, equipmentPanel);
     }
 
     public void ExitGame()

@@ -35,7 +35,8 @@ public class MyGameManager
     }
 
     // Save game
-    public void SaveGame(PlayerController playerController, PlayerStats playerStats, Inventory playerInventory)
+    public void SaveGame(PlayerController playerController, PlayerStats playerStats, Inventory playerInventory,
+                            GameObject itemsInventory, GameObject equipmentPanel)
     {
         // Save player's position
         PlayerPrefs.SetFloat("PosX", playerController.transform.position.x);
@@ -69,6 +70,32 @@ public class MyGameManager
         PlayerPrefs.SetInt("MPPotion", playerInventory.GetMPPotionStock());
         PlayerPrefs.SetInt("Coin", playerInventory.GetCoin());
 
-        // Save player's inventory
+        // Save player's items in inventory
+        // Delete old items in PlayerPrefs before saving
+        if (PlayerPrefs.HasKey("ItemCount"))
+        {
+            int itemCount = PlayerPrefs.GetInt("ItemCount");
+            for (int i = 0; i < itemCount; i++)
+            {
+                PlayerPrefs.DeleteKey("Item" + i);
+            }
+            PlayerPrefs.DeleteKey("ItemCount");
+        }
+
+        // Save
+        List<Item> playerItems = itemsInventory.GetComponent<InventoryController>().GetItems();
+        PlayerPrefs.SetInt("ItemCount", playerItems.Count);
+        for (int i = 0; i < playerItems.Count; i++)
+        {
+            PlayerPrefs.SetString("Item" + i, playerItems[i].ItemName);
+        }
+
+        // Save player's equipped items in equipment panel
+        EquipmentSlot[] equipmentSlots = equipmentPanel.GetComponent<EquipmentPanel>().GetEquipmentSlots();
+        PlayerPrefs.SetInt("EquippedItemCount", equipmentSlots.Length);
+        for (int i = 0; i < equipmentSlots.Length; i++)
+        {
+            PlayerPrefs.SetString("EquippedItem" + i, equipmentSlots[i].item == null ? "Empty" : equipmentSlots[i].item.ItemName);
+        }
     }
 }

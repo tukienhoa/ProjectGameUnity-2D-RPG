@@ -325,7 +325,10 @@ public class PlayerController : MonoBehaviour
     public void ToggleInventory()
     {
         if (playerMenu.activeSelf)
+        {
             playerMenu.SetActive(false);
+            MyGameManager.Instance.ResumeGame();
+        }
         if (spellController.activeSelf)
             spellController.SetActive(false);
 
@@ -335,7 +338,10 @@ public class PlayerController : MonoBehaviour
     public void ToggleSpellController()
     {
         if (playerMenu.activeSelf)
+        {
             playerMenu.SetActive(false);
+            MyGameManager.Instance.ResumeGame();
+        }
         if (inventoryObj.activeSelf)
             inventoryObj.SetActive(false);
 

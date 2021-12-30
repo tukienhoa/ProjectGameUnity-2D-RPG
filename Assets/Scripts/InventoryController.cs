@@ -90,4 +90,9 @@ public class InventoryController : MonoBehaviour
         RefreshUI();
         questionDialog.gameObject.SetActive(false);
     }
+
+    public List<Item> GetItems()
+    {
+        return items;
+    }
 }
