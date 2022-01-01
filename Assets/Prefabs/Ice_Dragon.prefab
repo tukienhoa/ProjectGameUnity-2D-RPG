@@ -252,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   isWalking: 0
-  walkTime: 2
+  walkTime: 3
   waitTime: 0.1
   walkZone: {fileID: 4751668363485070717}
   isChasing: 0
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7caaa7c657fa8794c975680d120a30db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToGive: 5
+  damageToGive: 20
   damageNumber: {fileID: 3122932881163162569, guid: ea989f1de18917a489b26a48c6b1c743, type: 3}
 --- !u!114 &4751668363040967938
 MonoBehaviour:
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 1000
   CurrentHealth: 1000
-  expToGive: 50
+  expToGive: 100
   coinToGive: 1000
 --- !u!95 &4751668363040967942
 Animator:

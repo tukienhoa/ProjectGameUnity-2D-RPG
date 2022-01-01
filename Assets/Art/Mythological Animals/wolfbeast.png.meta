@@ -175,7 +175,7 @@ TextureImporter:
     second: wolfbeast_56
   - first:
       213: 6481097492985115592
-    second: wolfbeast_68.5
+    second: wolfbeast_88
   - first:
       213: 7561088897974553972
     second: wolfbeast_58
@@ -268,10 +268,28 @@ TextureImporter:
     second: wolfbeast_87
   - first:
       213: -4987446730266314146
-    second: wolfbeast_57
+    second: wolfbeast_88
   - first:
       213: -7576218249951245268
     second: wolfbeast_89
+  - first:
+      213: 7341762435157439070
+    second: wolfbeast_90
+  - first:
+      213: -2152586914238828989
+    second: wolfbeast_91
+  - first:
+      213: -3789012282092688448
+    second: wolfbeast_92
+  - first:
+      213: 4557214996588578934
+    second: wolfbeast_93
+  - first:
+      213: 1190375842671891865
+    second: wolfbeast_94
+  - first:
+      213: -4001587363997520793
+    second: wolfbeast_95
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -364,12 +382,12 @@ TextureImporter:
       name: wolfbeast_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 364
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -385,12 +403,12 @@ TextureImporter:
       name: wolfbeast_1
       rect:
         serializedVersion: 2
-        x: 51
-        y: 365
-        width: 41
-        height: 51
+        x: 48
+        y: 364
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -406,12 +424,12 @@ TextureImporter:
       name: wolfbeast_2
       rect:
         serializedVersion: 2
-        x: 99
+        x: 96
         y: 364
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -427,12 +445,12 @@ TextureImporter:
       name: wolfbeast_3
       rect:
         serializedVersion: 2
-        x: 145
+        x: 144
         y: 364
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -448,12 +466,12 @@ TextureImporter:
       name: wolfbeast_4
       rect:
         serializedVersion: 2
-        x: 195
-        y: 365
-        width: 41
-        height: 51
+        x: 192
+        y: 364
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -469,12 +487,12 @@ TextureImporter:
       name: wolfbeast_5
       rect:
         serializedVersion: 2
-        x: 243
+        x: 240
         y: 364
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -490,12 +508,12 @@ TextureImporter:
       name: wolfbeast_6
       rect:
         serializedVersion: 2
-        x: 289
+        x: 288
         y: 364
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -511,12 +529,12 @@ TextureImporter:
       name: wolfbeast_7
       rect:
         serializedVersion: 2
-        x: 339
-        y: 365
-        width: 41
-        height: 51
+        x: 336
+        y: 364
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -532,12 +550,12 @@ TextureImporter:
       name: wolfbeast_8
       rect:
         serializedVersion: 2
-        x: 387
+        x: 384
         y: 364
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -553,12 +571,12 @@ TextureImporter:
       name: wolfbeast_9
       rect:
         serializedVersion: 2
-        x: 433
+        x: 432
         y: 364
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -574,12 +592,12 @@ TextureImporter:
       name: wolfbeast_10
       rect:
         serializedVersion: 2
-        x: 483
-        y: 365
-        width: 41
-        height: 51
+        x: 480
+        y: 364
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -595,12 +613,12 @@ TextureImporter:
       name: wolfbeast_11
       rect:
         serializedVersion: 2
-        x: 531
+        x: 528
         y: 364
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -619,9 +637,9 @@ TextureImporter:
         x: 0
         y: 312
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -638,11 +656,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 260
+        y: 312
         width: 48
-        height: 104
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -661,9 +679,9 @@ TextureImporter:
         x: 96
         y: 312
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -682,9 +700,9 @@ TextureImporter:
         x: 144
         y: 312
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -701,11 +719,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 260
+        y: 312
         width: 48
-        height: 104
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -724,9 +742,9 @@ TextureImporter:
         x: 240
         y: 312
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -745,9 +763,9 @@ TextureImporter:
         x: 288
         y: 312
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -764,11 +782,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 336
-        y: 260
+        y: 312
         width: 48
-        height: 104
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -787,9 +805,9 @@ TextureImporter:
         x: 384
         y: 312
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -808,9 +826,9 @@ TextureImporter:
         x: 432
         y: 312
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -827,11 +845,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 260
+        y: 312
         width: 48
-        height: 104
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -850,9 +868,9 @@ TextureImporter:
         x: 528
         y: 312
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -871,9 +889,9 @@ TextureImporter:
         x: 0
         y: 260
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -889,12 +907,12 @@ TextureImporter:
       name: wolfbeast_25
       rect:
         serializedVersion: 2
-        x: 96
+        x: 48
         y: 260
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -910,12 +928,12 @@ TextureImporter:
       name: wolfbeast_26
       rect:
         serializedVersion: 2
-        x: 144
+        x: 96
         y: 260
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -931,12 +949,12 @@ TextureImporter:
       name: wolfbeast_27
       rect:
         serializedVersion: 2
-        x: 240
+        x: 144
         y: 260
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -952,12 +970,12 @@ TextureImporter:
       name: wolfbeast_28
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 260
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -973,12 +991,12 @@ TextureImporter:
       name: wolfbeast_29
       rect:
         serializedVersion: 2
-        x: 384
+        x: 240
         y: 260
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -994,12 +1012,12 @@ TextureImporter:
       name: wolfbeast_30
       rect:
         serializedVersion: 2
-        x: 432
+        x: 288
         y: 260
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1015,12 +1033,12 @@ TextureImporter:
       name: wolfbeast_31
       rect:
         serializedVersion: 2
-        x: 528
+        x: 336
         y: 260
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1036,12 +1054,12 @@ TextureImporter:
       name: wolfbeast_32
       rect:
         serializedVersion: 2
-        x: 3
-        y: 208
-        width: 41
-        height: 51
+        x: 384
+        y: 260
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1057,12 +1075,12 @@ TextureImporter:
       name: wolfbeast_33
       rect:
         serializedVersion: 2
-        x: 52
-        y: 209
-        width: 41
-        height: 51
+        x: 432
+        y: 260
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1078,12 +1096,12 @@ TextureImporter:
       name: wolfbeast_34
       rect:
         serializedVersion: 2
-        x: 101
-        y: 208
-        width: 41
-        height: 51
+        x: 480
+        y: 260
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1099,12 +1117,12 @@ TextureImporter:
       name: wolfbeast_35
       rect:
         serializedVersion: 2
-        x: 147
-        y: 208
-        width: 41
-        height: 51
+        x: 528
+        y: 260
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1120,12 +1138,12 @@ TextureImporter:
       name: wolfbeast_36
       rect:
         serializedVersion: 2
-        x: 196
-        y: 209
-        width: 41
-        height: 51
+        x: 0
+        y: 208
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1141,12 +1159,12 @@ TextureImporter:
       name: wolfbeast_37
       rect:
         serializedVersion: 2
-        x: 245
+        x: 48
         y: 208
-        width: 41
-        height: 51
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1162,12 +1180,12 @@ TextureImporter:
       name: wolfbeast_38
       rect:
         serializedVersion: 2
-        x: 291
+        x: 96
         y: 208
-        width: 41
-        height: 51
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1183,12 +1201,12 @@ TextureImporter:
       name: wolfbeast_39
       rect:
         serializedVersion: 2
-        x: 340
-        y: 209
-        width: 41
-        height: 51
+        x: 144
+        y: 208
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1204,12 +1222,12 @@ TextureImporter:
       name: wolfbeast_40
       rect:
         serializedVersion: 2
-        x: 389
+        x: 192
         y: 208
-        width: 41
-        height: 51
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1225,12 +1243,12 @@ TextureImporter:
       name: wolfbeast_41
       rect:
         serializedVersion: 2
-        x: 435
+        x: 240
         y: 208
-        width: 41
-        height: 51
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1246,12 +1264,12 @@ TextureImporter:
       name: wolfbeast_42
       rect:
         serializedVersion: 2
-        x: 484
-        y: 209
-        width: 41
-        height: 51
+        x: 288
+        y: 208
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1267,12 +1285,12 @@ TextureImporter:
       name: wolfbeast_43
       rect:
         serializedVersion: 2
-        x: 533
+        x: 336
         y: 208
-        width: 41
-        height: 51
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1288,12 +1306,12 @@ TextureImporter:
       name: wolfbeast_44
       rect:
         serializedVersion: 2
-        x: 1
-        y: 156
-        width: 43
-        height: 50
+        x: 384
+        y: 208
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1309,12 +1327,12 @@ TextureImporter:
       name: wolfbeast_45
       rect:
         serializedVersion: 2
-        x: 51
-        y: 157
-        width: 41
-        height: 51
+        x: 432
+        y: 208
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1330,12 +1348,12 @@ TextureImporter:
       name: wolfbeast_46
       rect:
         serializedVersion: 2
-        x: 99
-        y: 156
-        width: 43
-        height: 50
+        x: 480
+        y: 208
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1351,12 +1369,12 @@ TextureImporter:
       name: wolfbeast_47
       rect:
         serializedVersion: 2
-        x: 145
-        y: 156
-        width: 43
-        height: 50
+        x: 528
+        y: 208
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1372,12 +1390,12 @@ TextureImporter:
       name: wolfbeast_48
       rect:
         serializedVersion: 2
-        x: 195
-        y: 157
-        width: 41
-        height: 51
+        x: 0
+        y: 156
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1393,12 +1411,12 @@ TextureImporter:
       name: wolfbeast_49
       rect:
         serializedVersion: 2
-        x: 243
+        x: 48
         y: 156
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1414,12 +1432,12 @@ TextureImporter:
       name: wolfbeast_50
       rect:
         serializedVersion: 2
-        x: 289
+        x: 96
         y: 156
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1435,12 +1453,12 @@ TextureImporter:
       name: wolfbeast_51
       rect:
         serializedVersion: 2
-        x: 339
-        y: 157
-        width: 41
-        height: 51
+        x: 144
+        y: 156
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1456,12 +1474,12 @@ TextureImporter:
       name: wolfbeast_52
       rect:
         serializedVersion: 2
-        x: 387
+        x: 192
         y: 156
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1477,12 +1495,12 @@ TextureImporter:
       name: wolfbeast_53
       rect:
         serializedVersion: 2
-        x: 433
+        x: 240
         y: 156
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1498,12 +1516,12 @@ TextureImporter:
       name: wolfbeast_54
       rect:
         serializedVersion: 2
-        x: 483
-        y: 157
-        width: 41
-        height: 51
+        x: 288
+        y: 156
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1519,12 +1537,12 @@ TextureImporter:
       name: wolfbeast_55
       rect:
         serializedVersion: 2
-        x: 531
+        x: 336
         y: 156
-        width: 43
-        height: 50
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1540,12 +1558,12 @@ TextureImporter:
       name: wolfbeast_56
       rect:
         serializedVersion: 2
-        x: 0
-        y: 105
+        x: 384
+        y: 156
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1558,15 +1576,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfbeast_68.5
+      name: wolfbeast_57
       rect:
         serializedVersion: 2
-        x: 48
-        y: 52
+        x: 432
+        y: 156
         width: 48
         height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1582,12 +1600,12 @@ TextureImporter:
       name: wolfbeast_58
       rect:
         serializedVersion: 2
-        x: 96
-        y: 104
+        x: 480
+        y: 156
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1603,12 +1621,12 @@ TextureImporter:
       name: wolfbeast_59
       rect:
         serializedVersion: 2
-        x: 144
-        y: 104
+        x: 528
+        y: 156
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1624,12 +1642,12 @@ TextureImporter:
       name: wolfbeast_60
       rect:
         serializedVersion: 2
-        x: 192
-        y: 52
+        x: 0
+        y: 104
         width: 48
-        height: 104
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1645,12 +1663,12 @@ TextureImporter:
       name: wolfbeast_61
       rect:
         serializedVersion: 2
-        x: 240
+        x: 48
         y: 104
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1666,12 +1684,12 @@ TextureImporter:
       name: wolfbeast_62
       rect:
         serializedVersion: 2
-        x: 288
+        x: 96
         y: 104
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1687,12 +1705,12 @@ TextureImporter:
       name: wolfbeast_63
       rect:
         serializedVersion: 2
-        x: 336
+        x: 144
         y: 104
         width: 48
         height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1708,12 +1726,12 @@ TextureImporter:
       name: wolfbeast_64
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 104
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1729,12 +1747,12 @@ TextureImporter:
       name: wolfbeast_65
       rect:
         serializedVersion: 2
-        x: 432
+        x: 240
         y: 104
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1750,12 +1768,12 @@ TextureImporter:
       name: wolfbeast_66
       rect:
         serializedVersion: 2
-        x: 480
-        y: 52
+        x: 288
+        y: 104
         width: 48
-        height: 104
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1771,12 +1789,12 @@ TextureImporter:
       name: wolfbeast_67
       rect:
         serializedVersion: 2
-        x: 528
+        x: 336
         y: 104
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1792,12 +1810,12 @@ TextureImporter:
       name: wolfbeast_68
       rect:
         serializedVersion: 2
-        x: 0
-        y: 52
+        x: 384
+        y: 104
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1813,12 +1831,12 @@ TextureImporter:
       name: wolfbeast_69
       rect:
         serializedVersion: 2
-        x: 96
-        y: 52
+        x: 432
+        y: 104
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1834,12 +1852,12 @@ TextureImporter:
       name: wolfbeast_70
       rect:
         serializedVersion: 2
-        x: 144
-        y: 52
+        x: 480
+        y: 104
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1855,12 +1873,12 @@ TextureImporter:
       name: wolfbeast_71
       rect:
         serializedVersion: 2
-        x: 240
-        y: 52
+        x: 528
+        y: 104
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1876,12 +1894,12 @@ TextureImporter:
       name: wolfbeast_72
       rect:
         serializedVersion: 2
-        x: 288
+        x: 0
         y: 52
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1897,12 +1915,12 @@ TextureImporter:
       name: wolfbeast_73
       rect:
         serializedVersion: 2
-        x: 384
+        x: 48
         y: 52
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1918,12 +1936,12 @@ TextureImporter:
       name: wolfbeast_74
       rect:
         serializedVersion: 2
-        x: 432
+        x: 96
         y: 52
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1939,12 +1957,12 @@ TextureImporter:
       name: wolfbeast_75
       rect:
         serializedVersion: 2
-        x: 528
+        x: 144
         y: 52
         width: 48
-        height: 51
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1960,12 +1978,12 @@ TextureImporter:
       name: wolfbeast_76
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 41
-        height: 51
+        x: 192
+        y: 52
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1981,12 +1999,12 @@ TextureImporter:
       name: wolfbeast_77
       rect:
         serializedVersion: 2
-        x: 52
-        y: 1
-        width: 41
-        height: 51
+        x: 240
+        y: 52
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2002,12 +2020,12 @@ TextureImporter:
       name: wolfbeast_78
       rect:
         serializedVersion: 2
-        x: 101
-        y: 0
-        width: 41
-        height: 51
+        x: 288
+        y: 52
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2023,12 +2041,12 @@ TextureImporter:
       name: wolfbeast_79
       rect:
         serializedVersion: 2
-        x: 147
-        y: 0
-        width: 41
-        height: 51
+        x: 336
+        y: 52
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2044,12 +2062,12 @@ TextureImporter:
       name: wolfbeast_80
       rect:
         serializedVersion: 2
-        x: 196
-        y: 1
-        width: 41
-        height: 51
+        x: 384
+        y: 52
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2065,12 +2083,12 @@ TextureImporter:
       name: wolfbeast_81
       rect:
         serializedVersion: 2
-        x: 245
-        y: 0
-        width: 41
-        height: 51
+        x: 432
+        y: 52
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2086,12 +2104,12 @@ TextureImporter:
       name: wolfbeast_82
       rect:
         serializedVersion: 2
-        x: 291
-        y: 0
-        width: 41
-        height: 51
+        x: 480
+        y: 52
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2107,12 +2125,12 @@ TextureImporter:
       name: wolfbeast_83
       rect:
         serializedVersion: 2
-        x: 340
-        y: 1
-        width: 41
-        height: 51
+        x: 528
+        y: 52
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2128,12 +2146,12 @@ TextureImporter:
       name: wolfbeast_84
       rect:
         serializedVersion: 2
-        x: 389
+        x: 0
         y: 0
-        width: 41
-        height: 51
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2149,12 +2167,12 @@ TextureImporter:
       name: wolfbeast_85
       rect:
         serializedVersion: 2
-        x: 435
+        x: 48
         y: 0
-        width: 41
-        height: 51
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2170,12 +2188,12 @@ TextureImporter:
       name: wolfbeast_86
       rect:
         serializedVersion: 2
-        x: 484
-        y: 1
-        width: 41
-        height: 51
+        x: 96
+        y: 0
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2191,12 +2209,12 @@ TextureImporter:
       name: wolfbeast_87
       rect:
         serializedVersion: 2
-        x: 533
+        x: 144
         y: 0
-        width: 41
-        height: 51
+        width: 48
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2209,15 +2227,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfbeast_57
+      name: wolfbeast_88
       rect:
         serializedVersion: 2
-        x: 48
-        y: 104
+        x: 192
+        y: 0
         width: 48
-        height: 53
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2233,10 +2251,10 @@ TextureImporter:
       name: wolfbeast_89
       rect:
         serializedVersion: 2
-        x: 336
-        y: 52
+        x: 240
+        y: 0
         width: 48
-        height: 51
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2246,6 +2264,132 @@ TextureImporter:
       bones: []
       spriteID: c2c03d664addbd690800000000000000
       internalID: -7576218249951245268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_90
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52bdd4590e23e560800000000000000
+      internalID: 7341762435157439070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_91
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ee3ac3b997022e0800000000000000
+      internalID: -2152586914238828989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_92
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbe54c8769ba6bc0800000000000000
+      internalID: -3789012282092688448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_93
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678cebce4ea7e3f30800000000000000
+      internalID: 4557214996588578934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_94
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9951aa3a580158010800000000000000
+      internalID: 1190375842671891865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfbeast_95
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c6c376e718778c0800000000000000
+      internalID: -4001587363997520793
       vertices: []
       indices: 
       edges: []

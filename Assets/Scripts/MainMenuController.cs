@@ -23,62 +23,62 @@ public class MainMenuController : MonoBehaviour
         foreach (Image item in locks)
         {
             if (item.name == "Lock_Volcano" || item.name == "Lock_Castle")
-                {
-                    item.gameObject.SetActive(false);
-                }
-        }
-
-        if (PlayerPrefs.HasKey("Map Progress"))
-        {
-            mapProgress = PlayerPrefs.GetInt("Map Progress");
-        }
-        else 
-        {
-            mapProgress = 0;
-        }
-
-        thePlayer = GameObject.Find("Player").GetComponent<PlayerController>();
-
-        Button[] buttons = this.GetComponentsInChildren<Button>();
-        if (mapProgress < 1)
-        {
-            for (int i = 0; i < buttons.Length; i++)
             {
-                if (buttons[i].name == "Volcano" || buttons[i].name == "Castle")
-                {
-                    buttons[i].interactable = false;
-                }
-            }
-            
-            foreach (Image item in locks)
-            {
-                if (item.name == "Lock_Volcano" || item.name == "Lock_Castle")
-                {
-                    item.gameObject.SetActive(true);
-                }
+                item.gameObject.SetActive(false);
             }
         }
 
-        if (mapProgress < 2)
-        {
-            for (int i = 0; i < buttons.Length; i++)
-            {
-                if (buttons[i].name == "Castle")
-                {
-                    buttons[i].interactable = false;
-                    break;
-                }
-            }
+        // if (PlayerPrefs.HasKey("Map Progress"))
+        // {
+        //     mapProgress = PlayerPrefs.GetInt("Map Progress");
+        // }
+        // else 
+        // {
+        //     mapProgress = 0;
+        // }
 
-            foreach (Image item in locks)
-            {
-                if (item.name == "Lock_Castle")
-                {
-                    item.gameObject.SetActive(true);
-                    break;
-                }
-            }
-        }
+        // thePlayer = GameObject.Find("Player").GetComponent<PlayerController>();
+
+        // Button[] buttons = this.GetComponentsInChildren<Button>();
+        // if (mapProgress < 1)
+        // {
+        //     for (int i = 0; i < buttons.Length; i++)
+        //     {
+        //         if (buttons[i].name == "Volcano" || buttons[i].name == "Castle")
+        //         {
+        //             buttons[i].interactable = false;
+        //         }
+        //     }
+
+        //     foreach (Image item in locks)
+        //     {
+        //         if (item.name == "Lock_Volcano" || item.name == "Lock_Castle")
+        //         {
+        //             item.gameObject.SetActive(true);
+        //         }
+        //     }
+        // }
+
+        // if (mapProgress < 2)
+        // {
+        //     for (int i = 0; i < buttons.Length; i++)
+        //     {
+        //         if (buttons[i].name == "Castle")
+        //         {
+        //             buttons[i].interactable = false;
+        //             break;
+        //         }
+        //     }
+
+        //     foreach (Image item in locks)
+        //     {
+        //         if (item.name == "Lock_Castle")
+        //         {
+        //             item.gameObject.SetActive(true);
+        //             break;
+        //         }
+        //     }
+        // }
     }
 
     // Update is called once per frame
@@ -120,20 +120,25 @@ public class MainMenuController : MonoBehaviour
                 }
             }
             else Debug.Log("Scene locked. Complete Ice Mountain Scene to unlock this scene.");
-            
+
         }
 
         if (name.Equals("Castle"))
         {
-            if (PlayerPrefs.GetInt("Map Progress") >= 2)
+            // if (PlayerPrefs.GetInt("Map Progress") >= 2)
+            // {
+            //     SceneManager.LoadScene("CastleScene");
+            //     if (thePlayer != null)
+            //     {
+            //         thePlayer.startPoint = "Castle Scene Start";
+            //     }
+            // }
+            // else Debug.Log("Scene locked. Complete Volcano Scene to unlock this scene.");
+            SceneManager.LoadScene("CastleScene");
+            if (thePlayer != null)
             {
-                SceneManager.LoadScene("CastleScene");
-                if (thePlayer != null)
-                {
-                    thePlayer.startPoint = "Castle Scene Start";
-                }
+                thePlayer.startPoint = "Castle Scene Start";
             }
-            else Debug.Log("Scene locked. Complete Volcano Scene to unlock this scene.");
         }
 
         if (name.Equals("Cancel") || name.Equals("Back to Village"))
