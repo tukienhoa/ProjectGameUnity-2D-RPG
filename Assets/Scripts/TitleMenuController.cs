@@ -9,13 +9,13 @@ public class TitleMenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void LoadArea()
@@ -23,7 +23,13 @@ public class TitleMenuController : MonoBehaviour
         string name = EventSystem.current.currentSelectedGameObject.name;
         if (name.Equals("New Game"))
         {
-            SceneManager.LoadScene("VillageScreen");   
+            MyGameManager.Instance.isNewGame = true;
+            SceneManager.LoadScene("VillageScreen");
+        }
+        if (name.Equals("Continue"))
+        {
+            MyGameManager.Instance.isNewGame = false;
+            SceneManager.LoadScene("VillageScreen");
         }
     }
 

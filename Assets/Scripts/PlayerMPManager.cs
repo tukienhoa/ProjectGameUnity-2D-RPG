@@ -29,6 +29,11 @@ public class PlayerMPManager : MonoBehaviour
         return playerMaxMP;
     }
 
+    public int GetCurrentMP()
+    {
+        return playerCurrentMP;
+    }
+
     public void ChangeMaxMP(int manaValue)
     {
         playerMaxMP += manaValue;

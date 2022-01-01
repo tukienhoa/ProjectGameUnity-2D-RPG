@@ -83,4 +83,9 @@ public class EquipmentPanel : MonoBehaviour
             }
         }
     }
+
+    public EquipmentSlot[] GetEquipmentSlots()
+    {
+        return equipmentSlots;
+    }
 }

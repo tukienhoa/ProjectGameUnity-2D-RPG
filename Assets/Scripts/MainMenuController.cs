@@ -13,8 +13,16 @@ public class MainMenuController : MonoBehaviour
     public GameObject playerMenu;
 
     private PlayerController thePlayer;
+    private PlayerStats thePS;
+    private Inventory playerInventory;
+
+    // Items
+    public GameObject itemsInventory;
+    public GameObject equipmentPanel;
 
     private int mapProgress;
+
+    [SerializeField] Button saveButton;
 
     // Start is called before the first frame update
     void Start()
@@ -28,63 +36,72 @@ public class MainMenuController : MonoBehaviour
             }
         }
 
-        // if (PlayerPrefs.HasKey("Map Progress"))
-        // {
-        //     mapProgress = PlayerPrefs.GetInt("Map Progress");
-        // }
-        // else 
-        // {
-        //     mapProgress = 0;
-        // }
+        if (PlayerPrefs.HasKey("Map Progress"))
+        {
+            mapProgress = PlayerPrefs.GetInt("Map Progress");
+        }
+        else
+        {
+            mapProgress = 0;
+        }
 
-        // thePlayer = GameObject.Find("Player").GetComponent<PlayerController>();
+        thePlayer = GameObject.Find("Player").GetComponent<PlayerController>();
+        thePS = FindObjectOfType<PlayerStats>();
+        playerInventory = GameObject.Find("Player").GetComponent<Inventory>();
 
-        // Button[] buttons = this.GetComponentsInChildren<Button>();
-        // if (mapProgress < 1)
-        // {
-        //     for (int i = 0; i < buttons.Length; i++)
-        //     {
-        //         if (buttons[i].name == "Volcano" || buttons[i].name == "Castle")
-        //         {
-        //             buttons[i].interactable = false;
-        //         }
-        //     }
+        Button[] buttons = this.GetComponentsInChildren<Button>();
+        if (mapProgress < 1)
+        {
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                if (buttons[i].name == "Volcano" || buttons[i].name == "Castle")
+                {
+                    buttons[i].interactable = false;
+                }
+            }
 
-        //     foreach (Image item in locks)
-        //     {
-        //         if (item.name == "Lock_Volcano" || item.name == "Lock_Castle")
-        //         {
-        //             item.gameObject.SetActive(true);
-        //         }
-        //     }
-        // }
+            foreach (Image item in locks)
+            {
+                if (item.name == "Lock_Volcano" || item.name == "Lock_Castle")
+                {
+                    item.gameObject.SetActive(true);
+                }
+            }
+        }
 
-        // if (mapProgress < 2)
-        // {
-        //     for (int i = 0; i < buttons.Length; i++)
-        //     {
-        //         if (buttons[i].name == "Castle")
-        //         {
-        //             buttons[i].interactable = false;
-        //             break;
-        //         }
-        //     }
+        if (mapProgress < 2)
+        {
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                if (buttons[i].name == "Castle")
+                {
+                    buttons[i].interactable = false;
+                    break;
+                }
+            }
 
-        //     foreach (Image item in locks)
-        //     {
-        //         if (item.name == "Lock_Castle")
-        //         {
-        //             item.gameObject.SetActive(true);
-        //             break;
-        //         }
-        //     }
-        // }
+            foreach (Image item in locks)
+            {
+                if (item.name == "Lock_Castle")
+                {
+                    item.gameObject.SetActive(true);
+                    break;
+                }
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (SceneManager.GetActiveScene().name.Equals("VillageScreen"))
+        {
+            saveButton.gameObject.SetActive(true);
+        }
+        if (!SceneManager.GetActiveScene().name.Equals("VillageScreen"))
+        {
+            saveButton.gameObject.SetActive(false);
+        }
     }
 
     public void LoadArea()
@@ -125,20 +142,15 @@ public class MainMenuController : MonoBehaviour
 
         if (name.Equals("Castle"))
         {
-            // if (PlayerPrefs.GetInt("Map Progress") >= 2)
-            // {
-            //     SceneManager.LoadScene("CastleScene");
-            //     if (thePlayer != null)
-            //     {
-            //         thePlayer.startPoint = "Castle Scene Start";
-            //     }
-            // }
-            // else Debug.Log("Scene locked. Complete Volcano Scene to unlock this scene.");
-            SceneManager.LoadScene("CastleScene");
-            if (thePlayer != null)
+            if (PlayerPrefs.GetInt("Map Progress") >= 2)
             {
-                thePlayer.startPoint = "Castle Scene Start";
+                SceneManager.LoadScene("CastleScene");
+                if (thePlayer != null)
+                {
+                    thePlayer.startPoint = "Castle Scene Start";
+                }
             }
+            else Debug.Log("Scene locked. Complete Volcano Scene to unlock this scene.");
         }
 
         if (name.Equals("Cancel") || name.Equals("Back to Village"))
@@ -150,6 +162,7 @@ public class MainMenuController : MonoBehaviour
                     inventoryObj.SetActive(false);
 
                 playerMenu.SetActive(!playerMenu.activeSelf);
+                MyGameManager.Instance.ResumeGame();
             }
             else
             {
@@ -162,8 +175,14 @@ public class MainMenuController : MonoBehaviour
                     inventoryObj.SetActive(false);
 
                 playerMenu.SetActive(!playerMenu.activeSelf);
+                MyGameManager.Instance.ResumeGame();
             }
         }
+    }
+
+    public void SaveGame()
+    {
+        MyGameManager.Instance.SaveGame(thePlayer, thePS, playerInventory, itemsInventory, equipmentPanel);
     }
 
     public void ExitGame()

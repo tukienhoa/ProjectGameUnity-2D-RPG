@@ -44,13 +44,22 @@ public class WeaponShop : MonoBehaviour
         {
             Weapon temp = new Weapon();
             temp.weaponName = items[i].ItemName;
-            temp.weaponPrice = 20;
+            if (temp.weaponName.Contains("Rookie"))
+            {
+                temp.weaponPrice = 20;
+            }
+            else if (temp.weaponName.Contains("Hunter"))
+            {
+                temp.weaponPrice = 500;
+            }
+            else
+            {
+                temp.weaponPrice = 2000;
+            }
             temp.weaponSprite = items[i].Icon;
             temp.weaponID = weaponList.Count + 1;
             weaponList.Add(temp);
         }
-        
-        Debug.Log(weaponList.Count);
         
         for (int i = 0; i < weaponList.Count; i++)
         {

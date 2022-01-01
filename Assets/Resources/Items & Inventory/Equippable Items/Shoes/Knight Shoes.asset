@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9ae187f34111347b48f1b8cbff276e, type: 3}
+  m_Name: Knight Shoes
+  m_EditorClassIdentifier: 
+  ItemName: Knight Shoes
+  Icon: {fileID: 3222497511411879781, guid: 20a298d8c43466449a41c77dee17b9d2, type: 3}
+  HPBonus: 0
+  MPBonus: 0
+  DEFBonus: 0
+  ATKBonus: 0
+  APBonus: 52
+  equipmentType: 3

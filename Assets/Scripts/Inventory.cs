@@ -25,6 +25,13 @@ public class Inventory : MonoBehaviour
     {
         playerHealthManager = GetComponent<PlayerHealthManager>();
         playerMPManager = GetComponent<PlayerMPManager>();
+
+        if (!MyGameManager.Instance.isNewGame)
+        {
+            HPPotionStock = PlayerPrefs.GetInt("HPPotion");
+            MPPotionStock = PlayerPrefs.GetInt("MPPotion");
+            coin = PlayerPrefs.GetInt("Coin");
+        }
     }
 
     // Update is called once per frame
