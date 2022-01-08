@@ -10,7 +10,8 @@ public class BuyButton : MonoBehaviour
 
     private GameObject playerInventory;
 
-    void Start() {
+    void Start()
+    {
         inventory = FindObjectOfType<Inventory>();
 
         Transform[] objs = Resources.FindObjectsOfTypeAll<Transform>() as Transform[];
@@ -54,20 +55,23 @@ public class BuyButton : MonoBehaviour
                             inventory.SetMPPotionStock(inventory.GetMPPotionStock() + 1);
                             inventory.ChangeCoinValue(-WeaponShop.weaponShop.weaponList[i].weaponPrice);
                         }
-                        
-                        else 
+
+                        else
                         {
                             if (playerInventory != null)
                             {
-                                Item item = WeaponShop.weaponShop.items[weaponID - 3];
-                                playerInventory.GetComponent<InventoryController>().AddItem(item);
-                                inventory.ChangeCoinValue(-WeaponShop.weaponShop.weaponList[i].weaponPrice);
+                                if (!playerInventory.GetComponent<InventoryController>().IsFull())
+                                {
+                                    Item item = WeaponShop.weaponShop.items[weaponID - 3];
+                                    playerInventory.GetComponent<InventoryController>().AddItem(item);
+                                    inventory.ChangeCoinValue(-WeaponShop.weaponShop.weaponList[i].weaponPrice);
+                                }
                             }
                         }
                     }
                 }
             }
         }
-        
+
     }
 }
