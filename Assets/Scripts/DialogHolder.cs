@@ -13,10 +13,16 @@ public class DialogHolder : MonoBehaviour
 
     public bool isActive = false;
 
+    private GameObject hud;
+
+    private GameObject canvas;
+
     // Start is called before the first frame update
     void Start()
     {
-        dManager = FindObjectOfType<DialogManager>();    
+        dManager = FindObjectOfType<DialogManager>();   
+        hud = GameObject.Find("HUD").gameObject;
+        canvas = GameObject.Find("Canvas").gameObject;
     }
 
     // Update is called once per frame
@@ -41,10 +47,14 @@ public class DialogHolder : MonoBehaviour
             if (isActive == true)
             {
                 weaponShop.SetActive(true);
+                hud.SetActive(false);
+                canvas.SetActive(false);
             }
             else
             {
                 weaponShop.SetActive(false);
+                hud.SetActive(true);
+                canvas.SetActive(true);
             }
         }
     }

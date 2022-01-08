@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 
 public class TitleMenuController : MonoBehaviour
 {
+    public GameObject continueButton;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +17,14 @@ public class TitleMenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (PlayerPrefs.HasKey("Level")) 
+        {
+            continueButton.SetActive(true);
+        }
+        else
+        {
+            continueButton.SetActive(false);
+        }
     }
 
     public void LoadArea()
@@ -24,6 +33,7 @@ public class TitleMenuController : MonoBehaviour
         if (name.Equals("New Game"))
         {
             MyGameManager.Instance.isNewGame = true;
+            PlayerPrefs.DeleteAll();
             SceneManager.LoadScene("VillageScreen");
         }
         if (name.Equals("Continue"))

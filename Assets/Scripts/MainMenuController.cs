@@ -30,7 +30,7 @@ public class MainMenuController : MonoBehaviour
         Image[] locks = this.GetComponentsInChildren<Image>();
         foreach (Image item in locks)
         {
-            if (item.name == "Lock_Volcano" || item.name == "Lock_Castle")
+            if (item.name == "Lock_Mountain" || item.name == "Lock_Volcano" || item.name == "Lock_Castle")
             {
                 item.gameObject.SetActive(false);
             }
@@ -50,7 +50,26 @@ public class MainMenuController : MonoBehaviour
         playerInventory = GameObject.Find("Player").GetComponent<Inventory>();
 
         Button[] buttons = this.GetComponentsInChildren<Button>();
-        if (mapProgress < 1)
+        if (mapProgress == 0)
+        {
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                if (buttons[i].name == "Ice Mountain" || buttons[i].name == "Volcano" || buttons[i].name == "Castle")
+                {
+                    buttons[i].interactable = false;
+                }
+            }
+
+            foreach (Image item in locks)
+            {
+                if (item.name == "Lock_Mountain" || item.name == "Lock_Volcano" || item.name == "Lock_Castle")
+                {
+                    item.gameObject.SetActive(true);
+                }
+            }
+        }
+
+        if (mapProgress == 1)
         {
             for (int i = 0; i < buttons.Length; i++)
             {
@@ -69,7 +88,7 @@ public class MainMenuController : MonoBehaviour
             }
         }
 
-        if (mapProgress < 2)
+        if (mapProgress == 2)
         {
             for (int i = 0; i < buttons.Length; i++)
             {
@@ -94,13 +113,15 @@ public class MainMenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name.Equals("VillageScreen"))
-        {
-            saveButton.gameObject.SetActive(true);
-        }
-        if (!SceneManager.GetActiveScene().name.Equals("VillageScreen"))
-        {
-            saveButton.gameObject.SetActive(false);
+        if (saveButton != null) {
+            if (SceneManager.GetActiveScene().name.Equals("VillageScreen"))
+            {
+                saveButton.gameObject.SetActive(true);
+            }
+            if (!SceneManager.GetActiveScene().name.Equals("VillageScreen"))
+            {
+                saveButton.gameObject.SetActive(false);
+            }
         }
     }
 

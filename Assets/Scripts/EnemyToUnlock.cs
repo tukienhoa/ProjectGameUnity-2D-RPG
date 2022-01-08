@@ -30,16 +30,20 @@ public class EnemyToUnlock : MonoBehaviour
 
             switch (SceneManager.GetActiveScene().name)
             {
-                case "IceMapScene":
+                case "RuinedVillageScene":
                 PlayerPrefs.SetInt("Map Progress", 1);
                 break;
 
-                case "LavaScene":
+                case "IceMapScene":
                 PlayerPrefs.SetInt("Map Progress", 2);
                 break;
 
-                case "CastleScene":
+                case "LavaScene":
                 PlayerPrefs.SetInt("Map Progress", 3);
+                break;
+
+                case "CastleScene":
+                PlayerPrefs.SetInt("Map Progress", 4);
                 break;
             }
 

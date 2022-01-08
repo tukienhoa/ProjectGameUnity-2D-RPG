@@ -5110,6 +5110,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8892639718774855156, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8892639718774855158, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -5138,9 +5142,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8892639718774855159, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 8892639718914811184, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
       propertyPath: m_Name
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892639718914811184, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8892639718914811188, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
       propertyPath: m_Pivot.x
@@ -5226,6 +5238,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8892639719092389562, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 44
+      objectReference: {fileID: 0}
     - target: {fileID: 8892639719092389565, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SaveGame
@@ -5258,9 +5274,29 @@ PrefabInstance:
       propertyPath: playerEquippedItems
       value: 
       objectReference: {fileID: 1147433131}
+    - target: {fileID: 8892639719823636943, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892639720228460200, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -43
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892639720320891408, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackToTitle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892639720320891409, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -45
+      objectReference: {fileID: 0}
     - target: {fileID: 8892639720672774321, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ExitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892639720672774334, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
@@ -60825,6 +60861,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PlayerController, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 5235736522691537773, guid: 4f86ddd960cbc434090af178ca249430, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 199
+      objectReference: {fileID: 0}
     - target: {fileID: 5235736523716967811, guid: 4f86ddd960cbc434090af178ca249430, type: 3}
       propertyPath: m_Name
       value: Controls Menu
@@ -60929,6 +60969,10 @@ PrefabInstance:
       propertyPath: itemsInventory
       value: 
       objectReference: {fileID: 2001340563}
+    - target: {fileID: 5772083805878724433, guid: 4f86ddd960cbc434090af178ca249430, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -31
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3729000374633780973, guid: 4f86ddd960cbc434090af178ca249430, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4f86ddd960cbc434090af178ca249430, type: 3}
