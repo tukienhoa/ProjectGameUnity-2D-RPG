@@ -4134,6 +4134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueButton: {fileID: 1155111200}
+  audioMixer: {fileID: 24100000, guid: 72c6297cef2556e48b2119e2c69d9214, type: 2}
 --- !u!1 &2126288476
 GameObject:
   m_ObjectHideFlags: 0
