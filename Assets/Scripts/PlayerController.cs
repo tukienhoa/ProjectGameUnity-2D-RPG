@@ -65,6 +65,8 @@ public class PlayerController : MonoBehaviour
     // Player Menu
     public GameObject playerMenu;
 
+    public GameObject controlsMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -331,6 +333,11 @@ public class PlayerController : MonoBehaviour
         }
         if (spellController.activeSelf)
             spellController.SetActive(false);
+        if (controlsMenu.activeSelf)
+        {
+            controlsMenu.SetActive(false);
+            MyGameManager.Instance.ResumeGame();
+        }
 
         inventoryObj.SetActive(!inventoryObj.activeSelf);
     }
@@ -344,6 +351,11 @@ public class PlayerController : MonoBehaviour
         }
         if (inventoryObj.activeSelf)
             inventoryObj.SetActive(false);
+        if (controlsMenu.activeSelf)
+        {
+            controlsMenu.SetActive(false);
+            MyGameManager.Instance.ResumeGame();
+        }
 
         spellController.SetActive(!spellController.activeSelf);
     }
@@ -354,6 +366,8 @@ public class PlayerController : MonoBehaviour
             inventoryObj.SetActive(false);
         if (spellController.activeSelf)
             spellController.SetActive(false);
+        if (controlsMenu.activeSelf)
+            controlsMenu.SetActive(false);
 
         playerMenu.SetActive(!playerMenu.activeSelf);
 
@@ -365,5 +379,17 @@ public class PlayerController : MonoBehaviour
         {
             MyGameManager.Instance.ResumeGame();
         }
+    }
+
+    public void OpenControlsMenu()
+    {
+        if (inventoryObj.activeSelf)
+            inventoryObj.SetActive(false);
+        if (spellController.activeSelf)
+            spellController.SetActive(false);
+        if (playerMenu.activeSelf)
+            playerMenu.SetActive(false);
+
+        controlsMenu.SetActive(true);
     }
 }
