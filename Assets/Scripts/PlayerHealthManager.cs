@@ -53,7 +53,7 @@ public class PlayerHealthManager : MonoBehaviour
         {
             playerCurrentHealth = 0;
         }
-        
+
         // Flash effect when player gets hit by enemy
         StartCoroutine("HurtColor");
         sfxMan.playerHurt.Play();
@@ -72,6 +72,11 @@ public class PlayerHealthManager : MonoBehaviour
     public int GetCurrentHealth()
     {
         return playerCurrentHealth;
+    }
+
+    public void SetCurrentHealth(int value)
+    {
+        playerCurrentHealth = value;
     }
 
     public void ChangeMaxHealth(int healthValue)

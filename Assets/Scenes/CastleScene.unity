@@ -53747,6 +53747,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest
       objectReference: {fileID: 0}
+    - target: {fileID: 6043906740587172345, guid: af83cf1d4edae6a42a832fea7a6dc7c6, type: 3}
+      propertyPath: expReward
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043906740587172345, guid: af83cf1d4edae6a42a832fea7a6dc7c6, type: 3}
+      propertyPath: coinReward
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 6043906740587172351, guid: af83cf1d4edae6a42a832fea7a6dc7c6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -54265,6 +54273,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1866208829569080010, guid: 3aab3a830af81ec43aa57e56d371f0cf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866208829569080010, guid: 3aab3a830af81ec43aa57e56d371f0cf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866208829569080010, guid: 3aab3a830af81ec43aa57e56d371f0cf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866208829569080010, guid: 3aab3a830af81ec43aa57e56d371f0cf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866208829569080010, guid: 3aab3a830af81ec43aa57e56d371f0cf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.94
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1866208828405895096, guid: 3aab3a830af81ec43aa57e56d371f0cf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3aab3a830af81ec43aa57e56d371f0cf, type: 3}
@@ -54283,7 +54311,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -54298,11 +54326,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.29140726, y: 1.3327215}
-      - {x: 0.29391688, y: 0.6501656}
-      - {x: -0.29582503, y: 0.6468593}
-      - {x: -0.29870862, y: 1.3231034}
-      - {x: -1.4812921, y: 1.3231676}
+    - - {x: -1.4606035, y: 1.3489223}
       - {x: -1.4762881, y: -1.2464938}
       - {x: 1.4732448, y: -1.2645446}
       - {x: 1.4753134, y: 1.3305676}

@@ -680,10 +680,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f01bf213a190b6946a494bcd6523bd68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 100
-  CurrentHealth: 100
-  expToGive: 50
-  coinToGive: 10
+  MaxHealth: 70
+  CurrentHealth: 70
+  expToGive: 45
+  coinToGive: 6
 --- !u!114 &3748257421592469098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,7 +696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7caaa7c657fa8794c975680d120a30db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToGive: 5
+  damageToGive: 6
   damageNumber: {fileID: 3122932881163162569, guid: ea989f1de18917a489b26a48c6b1c743, type: 3}
 --- !u!1 &8663123852488514375
 GameObject:

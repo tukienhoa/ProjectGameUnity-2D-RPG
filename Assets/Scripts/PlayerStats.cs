@@ -48,51 +48,63 @@ public class PlayerStats : MonoBehaviour
 
         if (MyGameManager.Instance.isNewGame)
         {
-            currentHP = HPLevels[1];
-            currentMP = MPLevels[1];
-            currentAttack = attackLevels[1];
-            currentAP = APLevels[1];
-            currentDefence = defenceLevels[1];
+            if (!MyGameManager.Instance.isRunning)
+            {
+                currentHP = HPLevels[1];
+                currentMP = MPLevels[1];
+                currentAttack = attackLevels[1];
+                currentAP = APLevels[1];
+                currentDefence = defenceLevels[1];
 
-            // Manage Status Points and extra points
-            statusPoints = -1;
-            extraHP = 0;
-            extraMP = 0;
-            extraDEF = 0;
-            extraATK = 0;
-            extraAP = 0;
+                thePlayerHealth.playerMaxHealth = currentHP;
+                thePlayerHealth.playerCurrentHealth = currentHP;
 
-            // Manage Skill Points
-            skillPoints = -1;
-            usedSkillPoints = 0;
+                thePlayerMP.playerMaxMP = currentMP;
+                thePlayerMP.playerCurrentMP = currentMP;
+
+                // Manage Status Points and extra points
+                statusPoints = -1;
+                extraHP = 0;
+                extraMP = 0;
+                extraDEF = 0;
+                extraATK = 0;
+                extraAP = 0;
+
+                // Manage Skill Points
+                skillPoints = -1;
+                usedSkillPoints = 0;
+
+                MyGameManager.Instance.isRunning = true;
+            }
         }
         else
         {
             // Load stats
             if (PlayerPrefs.HasKey("Level"))
             {
-                currentLevel = PlayerPrefs.GetInt("Level");
-                currentExp = PlayerPrefs.GetInt("Exp");
+                if (!MyGameManager.Instance.isRunning)
+                {
+                    currentLevel = PlayerPrefs.GetInt("Level");
+                    currentExp = PlayerPrefs.GetInt("Exp");
 
-                statusPoints = PlayerPrefs.GetInt("StatusPoints");
-                extraHP = PlayerPrefs.GetInt("ExtraHP");
-                extraMP = PlayerPrefs.GetInt("ExtraMP");
-                extraATK = PlayerPrefs.GetInt("ExtraATK");
-                extraAP = PlayerPrefs.GetInt("ExtraAP");
-                extraDEF = PlayerPrefs.GetInt("ExtraDEF");
+                    statusPoints = PlayerPrefs.GetInt("StatusPoints");
+                    extraHP = PlayerPrefs.GetInt("ExtraHP");
+                    extraMP = PlayerPrefs.GetInt("ExtraMP");
+                    extraATK = PlayerPrefs.GetInt("ExtraATK");
+                    extraAP = PlayerPrefs.GetInt("ExtraAP");
+                    extraDEF = PlayerPrefs.GetInt("ExtraDEF");
+                    currentAttack = attackLevels[currentLevel] + extraATK;
+                    currentAP = APLevels[currentLevel] + extraAP;
+                    currentDefence = defenceLevels[currentLevel] + extraDEF;
 
-                currentAttack = attackLevels[currentLevel] + extraATK;
-                currentAP = APLevels[currentLevel] + extraAP;
-                currentDefence = defenceLevels[currentLevel] + extraDEF;
+                    thePlayerHealth.playerMaxHealth = HPLevels[currentLevel] + extraHP;
+                    thePlayerMP.playerMaxMP = MPLevels[currentLevel] + extraMP;
 
-                thePlayerHealth.playerMaxHealth = HPLevels[currentLevel] + extraHP;
-                thePlayerMP.playerMaxMP = MPLevels[currentLevel] + extraMP;
+                    skillPoints = PlayerPrefs.GetInt("SkillPoints");
+                    usedSkillPoints = PlayerPrefs.GetInt("UsedSKillPoints");
 
-                thePlayerHealth.playerCurrentHealth = PlayerPrefs.GetInt("CurrentHP");
-                thePlayerMP.playerCurrentMP = PlayerPrefs.GetInt("CurrentMP");
-
-                skillPoints = PlayerPrefs.GetInt("SkillPoints");
-                usedSkillPoints = PlayerPrefs.GetInt("UsedSKillPoints");
+                    MyGameManager.Instance.isRunning = true;
+                }
             }
         }
     }
@@ -120,8 +132,8 @@ public class PlayerStats : MonoBehaviour
         else
         {
             currentLevel++;
-            currentHP = HPLevels[currentLevel] + extraHP;
-            currentMP = MPLevels[currentLevel] + extraMP;
+            currentHP = thePlayerHealth.playerMaxHealth + HPLevels[currentLevel] - HPLevels[currentLevel - 1];
+            currentMP = thePlayerMP.playerMaxMP + MPLevels[currentLevel] - MPLevels[currentLevel - 1];
             currentExp -= toLevelUp[currentLevel - 1];
 
             thePlayerHealth.playerMaxHealth = currentHP;
@@ -130,9 +142,9 @@ public class PlayerStats : MonoBehaviour
             thePlayerMP.playerMaxMP = currentMP;
             thePlayerMP.playerCurrentMP = currentMP;
 
-            currentAttack = attackLevels[currentLevel] + extraATK;
-            currentAP = APLevels[currentLevel] + extraAP;
-            currentDefence = defenceLevels[currentLevel] + extraDEF;
+            currentAttack = currentAttack + attackLevels[currentLevel] - attackLevels[currentLevel - 1];
+            currentAP = currentAP + APLevels[currentLevel] - APLevels[currentLevel - 1];
+            currentDefence = currentDefence + defenceLevels[currentLevel] - defenceLevels[currentLevel - 1];
 
             statusPoints++;
             skillPoints++;
@@ -151,6 +163,11 @@ public class PlayerStats : MonoBehaviour
         return thePlayerHealth.GetCurrentHealth();
     }
 
+    public void SetPlayerCurrentHealth(int value)
+    {
+        thePlayerHealth.SetCurrentHealth(value);
+    }
+
     public void ChangePlayerMaxHealth(int healthValue)
     {
         thePlayerHealth.ChangeMaxHealth(healthValue);
@@ -164,6 +181,11 @@ public class PlayerStats : MonoBehaviour
     public int GetPlayerCurrentMP()
     {
         return thePlayerMP.GetCurrentMP();
+    }
+
+    public void SetPlayerCurrentMP(int value)
+    {
+        thePlayerMP.SetCurrentMP(value);
     }
 
     public void ChangePlayerMaxMP(int manaValue)

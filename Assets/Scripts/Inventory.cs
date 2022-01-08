@@ -28,9 +28,14 @@ public class Inventory : MonoBehaviour
 
         if (!MyGameManager.Instance.isNewGame)
         {
-            HPPotionStock = PlayerPrefs.GetInt("HPPotion");
-            MPPotionStock = PlayerPrefs.GetInt("MPPotion");
-            coin = PlayerPrefs.GetInt("Coin");
+            if (!MyGameManager.Instance.isCoinLoaded)
+            {
+                HPPotionStock = PlayerPrefs.GetInt("HPPotion");
+                MPPotionStock = PlayerPrefs.GetInt("MPPotion");
+                coin = PlayerPrefs.GetInt("Coin");
+
+                MyGameManager.Instance.isCoinLoaded = true;
+            }
         }
     }
 

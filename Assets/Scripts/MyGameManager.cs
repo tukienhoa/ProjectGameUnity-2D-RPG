@@ -6,6 +6,10 @@ public class MyGameManager
 {
     // Is new game
     public bool isNewGame = true;
+    public bool isRunning = false;
+    public bool areItemsLoaded = false;
+    public bool isCoinLoaded = false;
+    public bool areSpellsLoaded = false;
 
     // Singleton
     private static MyGameManager _instance;

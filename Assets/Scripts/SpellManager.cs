@@ -12,15 +12,23 @@ public class SpellManager : MonoBehaviour
     {
         if (MyGameManager.Instance.isNewGame)
         {
-            iceShardLevel = 1;
-            windBreathLevel = 1;
+            if (!MyGameManager.Instance.areSpellsLoaded)
+            {
+                iceShardLevel = 1;
+                windBreathLevel = 1;
+                MyGameManager.Instance.areSpellsLoaded = true;
+            }
         }
         else
         {
             if (PlayerPrefs.HasKey("IceShardLevel"))
             {
-                iceShardLevel = PlayerPrefs.GetInt("IceShardLevel");
-                windBreathLevel = PlayerPrefs.GetInt("WindBreathLevel");
+                if (!MyGameManager.Instance.areSpellsLoaded)
+                {
+                    iceShardLevel = PlayerPrefs.GetInt("IceShardLevel");
+                    windBreathLevel = PlayerPrefs.GetInt("WindBreathLevel");
+                    MyGameManager.Instance.areSpellsLoaded = true;
+                }
             }
         }
     }

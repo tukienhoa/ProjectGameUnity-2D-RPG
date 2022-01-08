@@ -264,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 15
   CurrentHealth: 15
-  expToGive: 25
+  expToGive: 5
   coinToGive: 1
 --- !u!1 &4862072728593793887
 GameObject:

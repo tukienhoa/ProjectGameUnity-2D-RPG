@@ -729,8 +729,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 750
   CurrentHealth: 750
-  expToGive: 150
-  coinToGive: 50
+  expToGive: 550
+  coinToGive: 400
 --- !u!114 &501020269423353666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,7 +743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7caaa7c657fa8794c975680d120a30db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToGive: 15
+  damageToGive: 50
   damageNumber: {fileID: 3122932881163162569, guid: ea989f1de18917a489b26a48c6b1c743, type: 3}
 --- !u!1 &7787667342672305587
 GameObject:
