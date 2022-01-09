@@ -50945,7 +50945,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1293891710, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
       propertyPath: coin
-      value: 1000
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1353506209, guid: 6504dd450aaa413488d1221b404634b6, type: 3}
       propertyPath: damageToGive
