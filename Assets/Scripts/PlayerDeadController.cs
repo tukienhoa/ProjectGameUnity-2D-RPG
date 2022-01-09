@@ -5,22 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeadController : MonoBehaviour
 {
-    private GameObject thePlayer;
+    public GameObject thePlayer;
 
     // Start is called before the first frame update
     void Start()
     {
-        Transform[] objs = Resources.FindObjectsOfTypeAll<Transform>() as Transform[];
-        for (int i = 0; i < objs.Length; i++)
-        {
-            if (objs[i].hideFlags == HideFlags.None)
-            {
-                if (objs[i].name == "Player")
-                {
-                    thePlayer = objs[i].gameObject;
-                }
-            }
-        }     
+        
     }
 
     // Update is called once per frame
