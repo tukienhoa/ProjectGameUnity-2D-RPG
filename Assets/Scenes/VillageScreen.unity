@@ -5271,6 +5271,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2001340563}
     - target: {fileID: 8892639719823636929, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
+      propertyPath: backToVillageButton
+      value: 
+      objectReference: {fileID: 832179807}
+    - target: {fileID: 8892639719823636929, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
       propertyPath: playerEquippedItems
       value: 
       objectReference: {fileID: 1147433131}
@@ -5308,6 +5312,17 @@ GameObject:
 --- !u!114 &832179806 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8892639719092389565, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
+  m_PrefabInstance: {fileID: 832179804}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &832179807 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8892639720228460203, guid: dd08a934b6dce394da919d9c0fb4c842, type: 3}
   m_PrefabInstance: {fileID: 832179804}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

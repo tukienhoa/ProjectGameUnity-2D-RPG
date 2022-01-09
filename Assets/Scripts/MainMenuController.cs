@@ -23,6 +23,7 @@ public class MainMenuController : MonoBehaviour
     private int mapProgress;
 
     [SerializeField] Button saveButton;
+    [SerializeField] Button backToVillageButton;
 
     // Start is called before the first frame update
     void Start()
@@ -113,7 +114,8 @@ public class MainMenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (saveButton != null) {
+        if (saveButton != null)
+        {
             if (SceneManager.GetActiveScene().name.Equals("VillageScreen"))
             {
                 saveButton.gameObject.SetActive(true);
@@ -121,6 +123,18 @@ public class MainMenuController : MonoBehaviour
             if (!SceneManager.GetActiveScene().name.Equals("VillageScreen"))
             {
                 saveButton.gameObject.SetActive(false);
+            }
+        }
+
+        if (backToVillageButton != null)
+        {
+            if (SceneManager.GetActiveScene().name.Equals("VillageScreen"))
+            {
+                backToVillageButton.gameObject.SetActive(false);
+            }
+            if (!SceneManager.GetActiveScene().name.Equals("VillageScreen"))
+            {
+                backToVillageButton.gameObject.SetActive(true);
             }
         }
     }
